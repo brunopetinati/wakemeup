@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Vector from '../../assets/icons/Vector.png'
+import Vector from '../../assets/icons/vector.png'
 
 export const Container = styled.div`
   background: linear-gradient(116.5deg, #5D6174 27.54%, rgba(81, 53, 53, 0.58) 84.67%);
@@ -57,6 +57,5 @@ export const AccessibilityButton = styled.button`
     margin-top: 4vh;
     margin-bottom: -4vh;
     background-size: 3vh;
-
   }
 `;
