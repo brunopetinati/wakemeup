@@ -1,4 +1,4 @@
-import { AdvertiseContainer, MainContainer } from '../../global/styles/index'
+import { MainContainer } from '../../global/styles/index'
 import MultiStepForm from '../../components/MultiStepForm';
 import LotteriaDegliScontrini from '../../components/LotteriaDegliScontrini';
 
@@ -6,7 +6,6 @@ import LotteriaDegliScontrini from '../../components/LotteriaDegliScontrini';
 const Desk_1_Init = () => {
   return (
   <>
-    <AdvertiseContainer />
     <MainContainer>
       <MultiStepForm />
       <LotteriaDegliScontrini />

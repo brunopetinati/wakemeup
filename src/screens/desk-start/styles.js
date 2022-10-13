@@ -11,12 +11,6 @@ export const Container = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
-
-  @media (max-width: 768px) {
-    height: 50vh;
-    margin-top: 50vh;
-  }
-
 `;
 
 export const InnerContainer = styled.div`
