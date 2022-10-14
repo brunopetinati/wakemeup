@@ -1,5 +1,5 @@
 import { MainContainer } from '../../global/styles/index'
-import MultiStepForm from '../../components/MultiStepForm';
+import MultiStepForm from '../../components/MultiStep';
 import LotteriaDegliScontrini from '../../components/LotteriaDegliScontrini';
 import ScanItemBarcode from '../../components/ScanItemBarcode'
 import BagsController from '../../components/BagsController';
