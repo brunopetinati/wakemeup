@@ -17,7 +17,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background: #F5F5F5;
-  padding-top: 2vh;
+  padding-top: 5vh;
   width: 100vw;
   height: 100vh;
 `;
