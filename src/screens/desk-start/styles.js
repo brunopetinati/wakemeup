@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Vector from '../../assets/icons/vector.png'
+import Accessibility from '../../assets/icons/accessibility.png'
 
 export const Container = styled.div`
   background: linear-gradient(116.5deg, #5D6174 27.54%, rgba(81, 53, 53, 0.58) 84.67%);
@@ -43,7 +43,7 @@ export const AccessibilityButton = styled.button`
   background: #FFFFFF;
   box-shadow: 0px 4px 4px #5D6174;
   border-radius: 20px;
-  background: url(${Vector}) no-repeat #FFF center;
+  background: url(${Accessibility}) no-repeat #FFF center;
   
   @media (max-width: 768px) {
     width: 10vw;
