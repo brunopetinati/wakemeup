@@ -2,8 +2,8 @@ import { useState } from 'react'
 //import { useNavigate } from "react-router-dom";
 //import { useSelector } from "react-redux";
 import Modal from 'react-modal'
-import { Container, GearIcon, InnerContainer, IconsContainer } from './styles';
-import { globalModal } from '../../global/styles/index'
+import { Container, GearIcon, InnerContainer, IconsContainer, BagsModalImage, Button, GreyButton } from './styles';
+import { globalModal, ModalContainer } from '../../global/styles/index'
 import Group9 from '../../assets/icons/Group 9.png'
 import Gear from '../../assets/icons/gear.png'
 //import Italian from '../../assets/icons/italian.png'
@@ -11,6 +11,8 @@ import AccessibilityButton from '../../assets/icons/accessibility.png'
 import Sound from '../../assets/icons/sound button.png'
 import Person from '../../assets/icons/person.png'
 import Ticket from '../../assets/icons/ticket.png'
+import x from '../../assets/icons/times.svg'
+import Bag from '../../assets/icons/bags.png'
 
 const ScanItemBarcode = () => {
 
@@ -46,7 +48,16 @@ const ScanItemBarcode = () => {
           style={globalModal}
           preventScroll={true}
       >
-        <div>Hello world</div>
+        <img src={x} onClick={handleToggle} style={{width: '1em', marginLeft: '39em', cursor: 'pointer'}} alt="x"/> 
+
+          <ModalContainer>
+            <BagsModalImage src={Bag} alt=""/>
+            <span>Indica il numero di borse che stai acquistando</span>
+            <Button>Non ho bisogno, grazie!</Button>
+            <GreyButton>1 Borsa</GreyButton>
+            <GreyButton>2 Borsa</GreyButton>
+            <GreyButton>3 Borsa</GreyButton>
+          </ModalContainer>
       </Modal> 
   </>);
 };

@@ -30,9 +30,23 @@ export const globalModal = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: 600,
-    height: 400,
-    backgroundColor: 'green',
+    width: '40.5em',
+    height: '60em',
+    backgroundColor: 'white',
     borderRadius: '3%'
   }
 }
+
+export const ModalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #4a4a4a;
+  height: 90%;
+  text-align: center;
+`;

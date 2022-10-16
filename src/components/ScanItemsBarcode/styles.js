@@ -65,3 +65,34 @@ export const IconsContainer = styled.div`
     height: 2.4em;
   }
 `;
+
+/* modal a partir daqui */
+
+export const BagsModalImage = styled.img`
+  width: 3em !important;
+  height: 3em !important;
+`;
+
+export const Button = styled.button`
+  background: #3DD5A1;
+  height: 3em;
+  width: 20em;
+  border-radius: 1.2em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: x-large;
+`;
+
+export const GreyButton = styled.button`
+  background: #5D6174;
+  height: 3em;
+  width: 20em;
+  border-radius: 1.2em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: x-large;
+`;

@@ -12,7 +12,6 @@ const AppRoutes = () => {
         <Routes>
           <Route exact path="/desk-1-init" element={<DESK_1_INIT />}/>
           <Route exact path="/" element={<BenVenuto />}/>
-          <Route exact path="/create_account" element={<div></div>}/>
         </Routes>
     </AnimatePresence>
   );
