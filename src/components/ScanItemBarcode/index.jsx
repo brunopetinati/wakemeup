@@ -1,4 +1,4 @@
-import { Container, GearIcon, HeaderSmallContainer, IconsContainer } from './styles';
+import { Container, GearIcon, InnerContainer, IconsContainer } from './styles';
 import Group9 from '../../assets/icons/Group 9.png'
 import Gear from '../../assets/icons/gear.png'
 import Italian from '../../assets/icons/italian.png'
@@ -13,10 +13,10 @@ const ScanItemBarcode = () => {
   return (
     <>
   <Container>
-    <HeaderSmallContainer>
+    <InnerContainer>
       <GearIcon src={Gear}/>
       <h1>Scan Items Barcode</h1>
-    </HeaderSmallContainer>
+    </InnerContainer>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <img src={Group9} alt=""></img>
     <IconsContainer>

@@ -1,8 +1,8 @@
 import { MainContainer } from '../../global/styles/index'
 import MultiStepForm from '../../components/MultiStep';
 import LotteriaDegliScontrini from '../../components/LotteriaDegliScontrini';
-import ScanItemBarcode from '../../components/ScanItemBarcode'
 import BagsController from '../../components/BagsController';
+import ScanItemBarcode from '../../components/ScanItemBarcode';
 
 
 const Desk_1_Init = () => {
@@ -11,8 +11,8 @@ const Desk_1_Init = () => {
     <MainContainer>
       <MultiStepForm />
       <LotteriaDegliScontrini />
-      <ScanItemBarcode />
       <BagsController />
+      <ScanItemBarcode />
     </MainContainer>
   </>
   )

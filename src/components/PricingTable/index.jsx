@@ -1,7 +1,10 @@
-import { Container } from './styles';
+import { Container, InnerContainer, BagsContainer, ButtonsBagContainer, Button } from './styles';
+import Scanner from '../../assets/icons/scanner.png'
 
-const ProductInfo = () => {
-  return <Container />
+const PricingTable = () => {
+  return (
+  <Container>
+  </Container>);
 };
 
-export default ProductInfo;
+export default PricingTable;

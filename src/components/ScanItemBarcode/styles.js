@@ -10,6 +10,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1.5em;
   
 
   h1 {
@@ -30,7 +31,7 @@ export const Container = styled.div`
 
 `;
 
-export const HeaderSmallContainer = styled.div`
+export const InnerContainer = styled.div`
   display:flex;
   flex-direction: row;
   align-items: center;
