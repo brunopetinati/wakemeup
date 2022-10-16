@@ -29,19 +29,17 @@ const ProductDisplay = () => {
         </PromotionIcons>
       </PromotionIconsContainer>
     </InnerContainer>
+    <AccessibilityIcons>
+      <select>
+        <option>Italian</option>
+      </select>
+      <img src={AccessibilityButton} alt="" />
+      <img src={Sound} alt="" />
+      <img src={Person} alt="" />
+      <img src={Ticket} alt="" />
+    </AccessibilityIcons>
   </Container>);
 
 };
 
 export default ProductDisplay;
-
-
-{/* <AccessibilityIcons>
-<select>
-  <option>Italian</option>
-</select>
-<img src={AccessibilityButton} alt="" />
-<img src={Sound} alt="" />
-<img src={Person} alt="" />
-<img src={Ticket} alt="" />
-</AccessibilityIcons> */}

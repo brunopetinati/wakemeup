@@ -46,7 +46,7 @@ export const ProductContainerInfo = styled.div`
 export const MainProductDisplay = styled.img`
   margin-top: 1em;
   margin-left: 8em;
-  height: 12em;
+  height: 11em;
   width: fit-content;
 `;
 
@@ -54,11 +54,11 @@ export const PromotionIconsContainer = styled.div`
   display: flex;
   flex-direction: row;
   height: 100%;
-  margin-top: 1em;
+  margin-top: 3em;
   
   span {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
   };
 `;
 
@@ -80,13 +80,13 @@ export const PromotionIcons = styled.div`
 `;
 
 export const AccessibilityIcons = styled.div`
-  width: 50%;
+  width: 90%;
   height: 5vh;
   margin-bottom: 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 1em;
 
   img {
