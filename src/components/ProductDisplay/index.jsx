@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Container, InnerContainer, ProductContainerInfo, PromotionIconsContainer, PromotionIcons, MainProductDisplay, AccessibilityIcons } from './styles';
 import Water from '../../assets/icons/water.png'
 import Promotion1 from '../../assets/icons/promotion1.png'
@@ -11,6 +12,9 @@ import Person from '../../assets/icons/person.png'
 import Ticket from '../../assets/icons/ticket.png'
 
 const ProductDisplay = () => {
+
+  const navigate = useNavigate(); 
+
   return (
   <Container>
     <InnerContainer>
@@ -25,7 +29,7 @@ const ProductDisplay = () => {
           <img src={Promotion1} alt="" />
           <img src={Promotion2} alt="" />
           <img src={Promotion3} alt="" />
-          <img src={Leave} alt="" />
+          <img src={Leave} alt=""onClick={() => navigate('/')}/>
         </PromotionIcons>
       </PromotionIconsContainer>
     </InnerContainer>
