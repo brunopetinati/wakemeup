@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-// futuramente, para acessibilidade
+// TO DO: acessibilidade
 export const AdvertiseContainer = styled.div`
   height: 50vh;
   display:none;
@@ -21,3 +21,18 @@ export const MainContainer = styled.div`
   width: 100vw;
   height: 100vh;
 `;
+
+export const globalModal = {
+  content: {
+    top:'50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: 600,
+    height: 400,
+    backgroundColor: 'green',
+    borderRadius: '3%'
+  }
+}

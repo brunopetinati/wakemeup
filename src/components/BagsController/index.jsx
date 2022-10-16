@@ -1,5 +1,6 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch,useSelector } from "react-redux";
+import { addBags, removeBags, zeroBags } from '../../store/modules/bags/actions'
 
 import { Container, InnerContainer, BagsContainer, ButtonsBagContainer, Button, ImageBag, ImageScanner, StyledSpan, GreenButtonBag, RedButtonBag, ZeroButtonBag } from './styles';
 import Scanner from '../../assets/icons/scanner.png'
@@ -7,14 +8,9 @@ import Bags from '../../assets/icons/bags.png'
 
 const BagsController = () => {
 
-  const [bags, setBags] = useState(0)
   const navigate = useNavigate(); 
-
-  const checkToRemoveBag = () => {
-    if (bags > 0) {
-      setBags(bags-1)
-    }
-  };
+  const bags = useSelector((state) => state.bags);
+  const dispatch = useDispatch();
 
 
   return (
@@ -26,9 +22,9 @@ const BagsController = () => {
         <StyledSpan>Hai bisogno di aggiungere sacchetti? {bags} </StyledSpan>
       </BagsContainer>
       <ButtonsBagContainer>
-        <GreenButtonBag onClick={() => setBags(bags+1)}/>
-        <ZeroButtonBag onClick={() => setBags(0)}/>
-        <RedButtonBag onClick={() => checkToRemoveBag()}/>
+        <GreenButtonBag onClick={() => dispatch(addBags(bags))}/>
+        <ZeroButtonBag onClick={() => dispatch(zeroBags(bags))}/>
+        <RedButtonBag onClick={() => dispatch(removeBags(bags))}/>
       </ButtonsBagContainer>
       <ImageScanner src={Scanner} />
     </InnerContainer>
