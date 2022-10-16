@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MainContainer } from '../../../global/styles/index'
 import MultiStepForm from '../../../components/MultiStep'
 import LotteriaDegliScontrini from '../../../components/LotteriaDegliScontrini';
-import PricingTable from '../../../components/PricingTable';
+import PricingList from '../../../components/PricingList';
 import ProductDisplay from '../../../components/ProductDisplay';
 
 
@@ -17,7 +17,7 @@ const DESK_2_SCANNER = () => {
     <MainContainer>
       <MultiStepForm />
       <LotteriaDegliScontrini />
-      <PricingTable />
+      <PricingList />
       <ProductDisplay />
     </MainContainer>
   </motion.div>

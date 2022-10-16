@@ -9,6 +9,7 @@ export const ButtonsBagContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  margin-top: 2%;
 `;
 
 
