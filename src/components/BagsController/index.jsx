@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addBags, removeBags, zeroBags } from '../../store/modules/bags/actions'
 
 import { Container, InnerContainer, BagsContainer, ButtonsBagContainer, Button, ImageBag, ImageScanner, StyledSpan, GreenButtonBag, RedButtonBag, ZeroButtonBag } from './styles';
@@ -22,7 +22,7 @@ const BagsController = () => {
         <StyledSpan>Hai bisogno di aggiungere sacchetti? {bags} </StyledSpan>
       </BagsContainer>
       <ButtonsBagContainer>
-        <GreenButtonBag onClick={() => dispatch(addBags(bags))}/>
+        <GreenButtonBag onClick={() => dispatch(addBags(1))}/>
         <ZeroButtonBag onClick={() => dispatch(zeroBags(bags))}/>
         <RedButtonBag onClick={() => dispatch(removeBags(bags))}/>
       </ButtonsBagContainer>

@@ -1,7 +1,8 @@
 import { useState } from 'react'
-//import { useNavigate } from "react-router-dom";
-//import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import Modal from 'react-modal'
+import { addBags } from '../../store/modules/bags/actions'
 import { Container, GearIcon, InnerContainer, IconsContainer, BagsModalImage, Button, GreyButton } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
 import Group9 from '../../assets/icons/Group 9.png'
@@ -16,12 +17,22 @@ import Bag from '../../assets/icons/bags.png'
 
 const ScanItemBarcode = () => {
 
-  //const navigate = useNavigate(); 
-  //const bags = useSelector((state) => state.bag);
+  const navigate = useNavigate(); 
+  const dispatch = useDispatch();
+  const bags = useSelector((state) => state.bags);
   const [modal, showModal] = useState(false);
 
-  const handleToggle = () => {
+  const handleBagsAddition = (bags) => {
+    dispatch(addBags(bags));
+    showModal(!modal);
+  };
+
+  const handleToggle = (bags) => {
+    if (bags === 0) {
     showModal(!modal)
+    } else {
+      navigate('/')
+    };
   };
 
   return (
@@ -32,7 +43,7 @@ const ScanItemBarcode = () => {
           <h1>Scan Items Barcode</h1>
         </InnerContainer>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src={Group9} alt="" onClick={() => handleToggle()}></img>
+        <img src={Group9} alt="" onClick={() => handleToggle(bags)}></img>
         <IconsContainer>
           <select>
             <option>Italian</option>
@@ -54,9 +65,9 @@ const ScanItemBarcode = () => {
             <BagsModalImage src={Bag} alt=""/>
             <span>Indica il numero di borse che stai acquistando</span>
             <Button>Non ho bisogno, grazie!</Button>
-            <GreyButton>1 Borsa</GreyButton>
-            <GreyButton>2 Borsa</GreyButton>
-            <GreyButton>3 Borsa</GreyButton>
+            <GreyButton onClick={() => handleBagsAddition(1)}>1 Borsa</GreyButton>
+            <GreyButton onClick={() => handleBagsAddition(2)}>2 Borsa</GreyButton>
+            <GreyButton onClick={() => handleBagsAddition(3)}>3 Borsa</GreyButton>
           </ModalContainer>
       </Modal> 
   </>);

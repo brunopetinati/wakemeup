@@ -6,8 +6,8 @@ import { ZERO_BAG } from "./action-types";
 const bagsReducer = (state = 0, action) => {
   switch (action.type) {
     case ADD_BAG:
-      //const { bag } = action;
-      return state + 1;
+      const { bag } = action;
+      return state + bag;
     
     case REMOVE_BAG:
       if(state > 0) { return state - 1; }
