@@ -1,4 +1,4 @@
-import { BrowserRouter as Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 
 import BenVenuto from '../screens/desk-start'
