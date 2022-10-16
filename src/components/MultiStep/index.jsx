@@ -20,7 +20,7 @@ const MultiStepForm = () => {
     </StepIconsContainer>
     <ProgressBarStyle>
       <BiggerBallStep />
-      <HighlightedBarStep />
+      <FadedBarStep />
       <SmallerBallStep />
       <FadedBarStep />
       <SmallerBallStep />

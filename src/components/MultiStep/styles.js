@@ -30,6 +30,7 @@ export const BiggerBallStep = styled.div`
   border-radius: 50%;
   border: solid #F5F5F5 7px;
   box-shadow: 0 0 0 10px #3DD5A1;
+  z-index: 2;
 `;
 
 export const SmallerBallStep = styled.div`
@@ -40,6 +41,7 @@ export const SmallerBallStep = styled.div`
   height: 21px;
   border-radius: 50%;
   border: solid #C9C9C9 8px;
+  z-index: 2;
 `;
 
 export const SmallerHighlightedBallStep = styled.div`
@@ -56,6 +58,7 @@ export const HighlightedBarStep = styled.div`
   width: 18vw;;
   height: 10px;
   background: linear-gradient(to right, #3DD5A1, #00D28A);
+  z-index: 0;
 `;  
 
 
@@ -63,6 +66,7 @@ export const FadedBarStep = styled.div`
   width: 18vw;;
   height: 10px;
   background: #C9C9C9;
+  z-index: 0;
 `;  
 
 export const StepIconsContainer = styled.div`

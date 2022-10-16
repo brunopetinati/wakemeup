@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 import { Container, InnerContainer, BagsContainer, ButtonsBagContainer, Button, ImageBag, ImageScanner, StyledSpan, GreenButtonBag, RedButtonBag, ZeroButtonBag } from './styles';
 import Scanner from '../../assets/icons/scanner.png'
 import Bags from '../../assets/icons/bags.png'
 
 const BagsController = () => {
+
+  const navigate = useNavigate(); 
+
   return (
   <Container>
     <span>Passa i prodotti sulla lettrice uno alla volta</span>
@@ -18,7 +23,7 @@ const BagsController = () => {
       </ButtonsBagContainer>
       <ImageScanner src={Scanner} />
     </InnerContainer>
-    <Button>Esci</Button>
+    <Button onClick={() => navigate('/')}>Esci</Button>
   </Container>)
 };
 

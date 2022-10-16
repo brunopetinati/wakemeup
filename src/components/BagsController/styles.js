@@ -80,7 +80,6 @@ export const RedButtonBag = styled.button`
   border: none;
   background: url(${Negative}) no-repeat #FF8D8D center;
   background-size: 1em;
-
 `;
 
 
@@ -93,6 +92,7 @@ export const Button = styled.button`
   border: none;
   color: #FFFFFF;
   font-weight: bolder;
+  margin: -1em;
 `;
 
 export const ImageBag = styled.img`
