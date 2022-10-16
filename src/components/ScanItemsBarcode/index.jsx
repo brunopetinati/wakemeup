@@ -39,6 +39,10 @@ const ScanItemBarcode = () => {
     };
   };
 
+  const handleCloseModal = () => {
+    showModal(!modal);
+  };
+
   return (
     <>
       <Container>
@@ -63,7 +67,7 @@ const ScanItemBarcode = () => {
           style={globalModal}
           preventScroll={true}
       >
-        <img src={x} onClick={handleToggle} style={{width: '1em', marginLeft: '39em', cursor: 'pointer'}} alt="x"/> 
+        <img src={x} onClick={handleCloseModal} style={{width: '1em', marginLeft: '39em', cursor: 'pointer'}} alt="x"/> 
 
           <ModalContainer>
             <BagsModalImage src={Bag} alt=""/>

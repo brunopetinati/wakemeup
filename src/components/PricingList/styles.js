@@ -84,21 +84,11 @@ export const TotalBar = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   padding: 1em;
-
-  span {
-
-  };
 
   img {
     width: 20px;
   }
-
-  div {
-
-  };
-
 `;
 
 export const Button = styled.button`
@@ -111,4 +101,28 @@ export const Button = styled.button`
   border-radius: 15.8644px;
   color: white;
   font-weight: 700;
+`;
+
+export const PaymentMethod = styled.div`
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+
+  img {
+    width: 50%;
+    height: 50%;
+  };
+`;
+
+export const ButtonModal = styled.button`
+  border: none;
+  background: #FF8D8D;
+  box-shadow: 0px 3.07373px 3.07373px rgba(0, 0, 0, 0.25);
+  border-radius: 15.9163px;
+  width: 30em;
+  height: 4em;
+  color: white;
 `;

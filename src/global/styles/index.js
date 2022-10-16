@@ -32,7 +32,7 @@ export const globalModal = {
     transform: 'translate(-50%, -50%)',
     width: '40.5em',
     height: '55em',
-    backgroundColor: '#F5F5F5;',
+    backgroundColor: '#9d9d9d',
     borderRadius: '3%'
   }
 }
@@ -46,7 +46,7 @@ export const ModalContainer = styled.div`
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;
-  color: #4a4a4a;
+  color: #F5F5F5;
   height: 90%;
   text-align: center;
 `;
