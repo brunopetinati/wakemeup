@@ -27,11 +27,15 @@ const ScanItemBarcode = () => {
     showModal(!modal);
   };
 
+  const handleContinueWithNoBags = () => {
+    navigate('/desk-2-scanner')
+  };
+
   const handleToggle = (bags) => {
     if (bags === 0) {
     showModal(!modal)
     } else {
-      navigate('/')
+      navigate('/desk-2-scanner')
     };
   };
 
@@ -64,7 +68,7 @@ const ScanItemBarcode = () => {
           <ModalContainer>
             <BagsModalImage src={Bag} alt=""/>
             <span>Indica il numero di borse che stai acquistando</span>
-            <Button>Non ho bisogno, grazie!</Button>
+            <Button onClick={() => handleContinueWithNoBags()}>Non ho bisogno, grazie!</Button>
             <GreyButton onClick={() => handleBagsAddition(1)}>1 Borsa</GreyButton>
             <GreyButton onClick={() => handleBagsAddition(2)}>2 Borsa</GreyButton>
             <GreyButton onClick={() => handleBagsAddition(3)}>3 Borsa</GreyButton>

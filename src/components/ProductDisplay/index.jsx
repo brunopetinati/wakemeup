@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
-const PricingTable = () => {
+const ProductDisplay = () => {
   return (
   <Container>
   </Container>);
 };
 
-export default PricingTable;
+export default ProductDisplay;

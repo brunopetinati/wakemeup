@@ -6,7 +6,7 @@ import BagsController from '../../components/BagsController';
 import ScanItemBarcode from '../../components/ScanItemsBarcode';
 
 
-const Desk_1_Init = () => {
+const DESK_1_INIT = () => {
   return (
   <motion.div
     initial={{ opacity: 0 }}
@@ -24,4 +24,4 @@ const Desk_1_Init = () => {
   )
 };
 
-export default Desk_1_Init;
+export default DESK_1_INIT;
