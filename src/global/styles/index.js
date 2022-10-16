@@ -31,7 +31,7 @@ export const globalModal = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width: '40.5em',
-    height: '60em',
+    height: '55em',
     backgroundColor: 'white',
     borderRadius: '3%'
   }
