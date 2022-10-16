@@ -8,45 +8,79 @@ export const Container = styled.div`
   background: #FFF;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 1.5em;
-  
-
-  h1 {
-    color: #3DD5A1;
-    margin: 0 auto;
-  };
-
-  p {
-    color: #3DD5A1;
-    width: 80%;
-    text-align: center;
-  };
-
-  img {
-    width: 80%;
-    height: 50%;
-  };
-
 `;
 
 export const InnerContainer = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+export const ProductContainerInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 2em;
+  text-align: left;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #4a4a4a;
+
+  h3 {
+    margin: 0 auto;
+  };
+
+  span {
+    font-size: 12px;
+  };
+`;
+
+export const MainProductDisplay = styled.img`
   margin-top: 1em;
+  margin-left: 8em;
+  height: 12em;
+  width: fit-content;
 `;
 
-export const GearIcon = styled.img`
-  width: 3vw !important;
-  height: 3vw !important;
-  margin-right: 21vw;
-  margin-left: -21vw;
+export const PromotionIconsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 1em;
+  
+  span {
+    font-weight: normal;
+    font-size: 20px;
+  };
 `;
 
-export const IconsContainer = styled.div`
-  width: 80%;
+export const PromotionIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    height: 4em;
+    width: 4em;
+  };
+
+  img:nth-child(5) {
+    width: 3em;
+    height: 4em;
+  }
+`;
+
+export const AccessibilityIcons = styled.div`
+  width: 50%;
   height: 5vh;
   margin-bottom: 1em;
   display: flex;
@@ -54,7 +88,7 @@ export const IconsContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-top: 1em;
-  
+
   img {
     width: 8vw;
     height: 3em;
@@ -64,35 +98,4 @@ export const IconsContainer = styled.div`
     width: 2.4em;
     height: 2.4em;
   }
-`;
-
-/* modal a partir daqui */
-
-export const BagsModalImage = styled.img`
-  width: 3em !important;
-  height: 3em !important;
-`;
-
-export const Button = styled.button`
-  background: #3DD5A1;
-  height: 3em;
-  width: 20em;
-  border-radius: 1.2em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  color: #FFFFFF;
-  font-weight: bolder;
-  font-size: x-large;
-`;
-
-export const GreyButton = styled.button`
-  background: #5D6174;
-  height: 3em;
-  width: 20em;
-  border-radius: 1.2em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  color: #FFFFFF;
-  font-weight: bolder;
-  font-size: x-large;
 `;

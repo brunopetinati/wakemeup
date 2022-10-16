@@ -17,8 +17,8 @@ const DESK_2_SCANNER = () => {
     <MainContainer>
       <MultiStepForm />
       <LotteriaDegliScontrini />
-      <PricingTable></PricingTable>
-      <ProductDisplay></ProductDisplay>
+      <PricingTable />
+      <ProductDisplay />
     </MainContainer>
   </motion.div>
   )

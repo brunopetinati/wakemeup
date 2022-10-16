@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from 'react-modal'
 import { addBags } from '../../store/modules/bags/actions'
-import { Container, GearIcon, InnerContainer, IconsContainer, BagsModalImage, Button, GreyButton } from './styles';
+import { Container, GearIcon, InnerContainer, AccessibilityIcons, BagsModalImage, Button, GreyButton } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
 import Group9 from '../../assets/icons/Group 9.png'
 import Gear from '../../assets/icons/gear.png'
@@ -48,7 +48,7 @@ const ScanItemBarcode = () => {
         </InnerContainer>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src={Group9} alt="" onClick={() => handleToggle(bags)}></img>
-        <IconsContainer>
+        <AccessibilityIcons>
           <select>
             <option>Italian</option>
           </select>
@@ -56,7 +56,7 @@ const ScanItemBarcode = () => {
           <img src={Sound} alt="" />
           <img src={Person} alt="" />
           <img src={Ticket} alt="" />
-        </IconsContainer>
+        </AccessibilityIcons>
       </Container>
       <Modal
           isOpen={modal}

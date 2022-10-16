@@ -45,7 +45,7 @@ export const GearIcon = styled.img`
   margin-left: -21vw;
 `;
 
-export const IconsContainer = styled.div`
+export const AccessibilityIcons = styled.div`
   width: 80%;
   height: 5vh;
   margin-bottom: 1em;

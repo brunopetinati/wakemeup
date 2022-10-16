@@ -32,7 +32,7 @@ export const globalModal = {
     transform: 'translate(-50%, -50%)',
     width: '40.5em',
     height: '55em',
-    backgroundColor: 'white',
+    backgroundColor: '#F5F5F5;',
     borderRadius: '3%'
   }
 }
