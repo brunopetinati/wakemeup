@@ -44,3 +44,31 @@ export const Button = styled.button`
   font-size: 16px;
   font-weight: 400;
 `;
+
+export const GreenButtonModal = styled.button`
+  border: none;
+  box-shadow: 0px 3.07373px 3.07373px rgba(0, 0, 0, 0.25);
+  border-radius: 15.9163px;
+  width: 17em;
+  height: 8em;
+  background: #3DD5A1;
+  color: white;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.5em;
+`;
+
+export const BlueButtonModal = styled.button`
+  border: none;
+  box-shadow: 0px 3.07373px 3.07373px rgba(0, 0, 0, 0.25);
+  border-radius: 15.9163px;
+  width: 17em;
+  height: 8em;
+  background: #6591C5;
+  color: white;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.5em;
+`;
