@@ -58,7 +58,7 @@ export const HighlightedBarStep = styled.div`
   width: 18vw;;
   height: 10px;
   background: linear-gradient(to right, #3DD5A1, #00D28A);
-  z-index: 0;
+  z-index: 2;
 `;  
 
 
