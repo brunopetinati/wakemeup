@@ -99,3 +99,16 @@ export const AccessibilityIcons = styled.div`
     height: 2.4em;
   }
 `;
+
+export const Button = styled.button`
+  border:none;
+  background: #FF8D8D;
+  box-shadow: 0px 3.00183px 3.00183px rgba(0, 0, 0, 0.25);
+  border-radius: 15.544px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  width: 20em;
+  height: 2em;
+  margin-left: 4em;
+`;

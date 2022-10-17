@@ -5,7 +5,6 @@ import Paymentopt from '../../assets/icons/paymentopt.png'
 import Payment from '../../assets/icons/payment.png' 
 import Transactioncomplete from '../../assets/icons/transactioncomplete.png' 
 
-
  
 const MultiStepForm = () => {
 

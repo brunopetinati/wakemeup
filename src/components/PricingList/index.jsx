@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
 import Modal from 'react-modal'
+import { nextStep } from '../../store/modules/step/actions'
 import { creditCard, buonoFedelta, satispay, giftCard } from '../../store/modules/payment/actions'
 import { Container, PricingListHeader, TableContainer, InnerContainer, InnerFirstSelection, InnerSecondSelection, MiniCard,TotalBar, Button, PaymentMethod, ButtonModal } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
@@ -23,7 +22,6 @@ const PricingList = () => {
   const products = ['logo printed shorts', 'sweat-shirt à fermeture éclair', 'Napolina Tagliatelle', 'Adina Latte', 'Coca Cola', 'logo printed crispy nylon swim shorts']
   const bags = useSelector((state) => state.bags);
   const [modal, showModal] = useState(false);
-  const navigate = useNavigate(); 
 
   const handleToggle = () => {
     showModal(!modal);
@@ -31,11 +29,11 @@ const PricingList = () => {
 
   const dispatch = useDispatch();
 
-  const handlePayment = (action) => {
-    dispatch(action);
+  const handlePayment = (payment) => {
+    dispatch(payment());
+    dispatch(nextStep());
     handleToggle();
   };
-
 
   return (
   <Container>

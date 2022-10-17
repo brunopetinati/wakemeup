@@ -1,18 +1,27 @@
-import { CREDIT_CARD, BUONO_FEDELTA, SATISPAY, GIFT_CARD } from "./action-types";
+import { CREDIT_CARD, BUONO_FEDELTA, SATISPAY, GIFT_CARD, EMPTY_STRING } from "./action-types";
 
 const paymentReducer = (state = '', action) => {
+
   switch (action.type) {
     case CREDIT_CARD:
-      return state = 'credit_card';
+      state = 'credit_card'
+      return state;
     
     case BUONO_FEDELTA:
-      return state = 'buono_fedelta';
+      state = 'buono_fedelta';
+      return state;
 
     case SATISPAY:
-      return state = 'satispay';
+      state = 'satispay';
+      return state;
 
     case GIFT_CARD:
-      return state = 'gift_card';
+      state = 'gift_card';
+      return state;
+
+    case EMPTY_STRING:
+      state = '';
+      return state;
 
     default:
       return state;

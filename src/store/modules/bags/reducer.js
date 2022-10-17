@@ -2,7 +2,6 @@ import { ADD_BAG } from "./action-types";
 import { REMOVE_BAG } from "./action-types";
 import { ZERO_BAG } from "./action-types";
 
-
 const bagsReducer = (state = 0, action) => {
   switch (action.type) {
     case ADD_BAG:

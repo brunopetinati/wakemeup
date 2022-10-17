@@ -1,12 +1,18 @@
+import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import { MainContainer } from '../../../global/styles/index'
 import MultiStepForm from '../../../components/MultiStep'
 import LotteriaDegliScontrini from '../../../components/LotteriaDegliScontrini';
 import PricingList from '../../../components/PricingList';
+import PricingListTotal from '../../../components/PricingListTotal';
 import MainDisplay from '../../../components/MainDisplay';
 
 
 const DESK_2_SCANNER = () => {
+
+  const step = useSelector((state) => state.step);
+  const payment = useSelector((state) => state.payment);
+
   return (
   <motion.div
     initial={{ opacity: 0 }}
@@ -17,7 +23,7 @@ const DESK_2_SCANNER = () => {
     <MainContainer>
       <MultiStepForm />
       <LotteriaDegliScontrini />
-      <PricingList />
+      {step === 1 ? <PricingList /> : <PricingListTotal />}
       <MainDisplay />
     </MainContainer>
   </motion.div>
