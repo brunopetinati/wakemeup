@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addBags, removeBags, zeroBags } from '../../store/modules/bags/actions'
+import { addBags, removeBags, zeroBags } from '../../store/modules/bags/actions';
 import { GreenButtonBag, RedButtonBag, ZeroButtonBag, ButtonsBagContainer } from './styles';
 
 const AddRemoveBags = () => {

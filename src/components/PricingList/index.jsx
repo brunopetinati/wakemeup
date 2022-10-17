@@ -33,7 +33,7 @@ const PricingList = () => {
 
   const handlePayment = (action) => {
     dispatch(action);
-    navigate('/');
+    handleToggle();
   };
 
 
