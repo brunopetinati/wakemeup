@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Container, BiggerBallStep, SmallerBallStep, ProgressBarStyle, FadedBarStep, SmallerHighlightedBallStep, HighlightedBarStep, StepTittleContainer, StepIconsContainer  } from './styles';
 import Scanbarcode from '../../assets/icons/scanbarcode.png' 
@@ -12,6 +13,7 @@ const MultiStepForm = () => {
   const titles = ['Scan Barcode', 'Payment \n Option', 'Payment', 'Transaction \n Complete']
   const icons = [ Scanbarcode, Paymentopt, Payment, Transactioncomplete]
 
+  useEffect(()=>{},[step])
   
   const ShowStep = () => {
     if(step === 1) {
@@ -26,8 +28,7 @@ const MultiStepForm = () => {
           <SmallerBallStep />
         </ProgressBarStyle>
         );
-    } else {
-      if(step === 2) {
+    } else if (step === 2) {
         return (
           <ProgressBarStyle>
               <BiggerBallStep />
@@ -37,10 +38,35 @@ const MultiStepForm = () => {
               <SmallerBallStep />
               <FadedBarStep />
               <SmallerBallStep />
-          </ProgressBarStyle>)
+          </ProgressBarStyle>
+        );
+    } else if (step === 3) {
+        return (
+          <ProgressBarStyle>
+              <BiggerBallStep />
+              <HighlightedBarStep />
+              <SmallerHighlightedBallStep />
+              <HighlightedBarStep />
+              <SmallerHighlightedBallStep />
+              <FadedBarStep />
+              <SmallerBallStep />
+          </ProgressBarStyle>
+        );
+      } else { 
+        return (
+          <ProgressBarStyle>
+              <BiggerBallStep />
+              <HighlightedBarStep />
+              <SmallerHighlightedBallStep />
+              <HighlightedBarStep />
+              <SmallerHighlightedBallStep />
+              <HighlightedBarStep />
+              <SmallerHighlightedBallStep />
+          </ProgressBarStyle>
+        );
       };
     };
-  };
+
 
   return (
   <Container>

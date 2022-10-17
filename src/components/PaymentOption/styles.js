@@ -27,6 +27,7 @@ export const InnerContainer = styled.div`
     font-style: italic;
     font-weight: 100;
     font-size: 1.5em;
+    inline-size: 15em;
     color: #000;
   };
 `;

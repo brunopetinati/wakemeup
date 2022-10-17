@@ -11,7 +11,7 @@ import Person from '../../assets/icons/person.png';
 import Ticket from '../../assets/icons/ticket.png';
 
 const MainDisplay = () => {
- 
+  
   const payment = useSelector((state) => state.payment);
   const dispatch = useDispatch();
 

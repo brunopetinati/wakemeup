@@ -1,4 +1,4 @@
-import { CREDIT_CARD, BUONO_FEDELTA, SATISPAY, GIFT_CARD, EMPTY_STRING } from "./action-types";
+import { CREDIT_CARD, BUONO_FEDELTA, SATISPAY, GIFT_CARD, EMPTY_STRING, CONFIRMING, SUCCESS } from "./action-types";
 
 export const creditCard = (payment) => ({
   type: CREDIT_CARD,
@@ -22,5 +22,15 @@ export const giftCard = (payment) => ({
 
 export const emptyString = (payment) => ({
   type: EMPTY_STRING,
+  payment,
+});
+
+export const confirming = (payment) => ({
+  type: CONFIRMING,
+  payment,
+});
+
+export const paymentSuccessful = (payment) => ({
+  type: SUCCESS,
   payment,
 });
