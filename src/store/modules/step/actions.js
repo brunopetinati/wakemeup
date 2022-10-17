@@ -4,4 +4,3 @@ export const nextStep = (step) => ({
   type: NEXT_STEP,
   step,
 });
-

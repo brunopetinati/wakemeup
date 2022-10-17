@@ -6,9 +6,11 @@ import thunk from "redux-thunk";
 
 import stepReducer from './modules/step/reducer'
 import bagsReducer from './modules/bags/reducer'
+import paymentReducer from './modules/payment/reducer'
 
 const reducers = combineReducers({
   step: stepReducer,
+  payment: paymentReducer,
   bags: bagsReducer
 });
 

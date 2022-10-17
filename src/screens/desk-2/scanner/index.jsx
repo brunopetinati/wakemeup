@@ -3,7 +3,7 @@ import { MainContainer } from '../../../global/styles/index'
 import MultiStepForm from '../../../components/MultiStep'
 import LotteriaDegliScontrini from '../../../components/LotteriaDegliScontrini';
 import PricingList from '../../../components/PricingList';
-import ProductDisplay from '../../../components/ProductDisplay';
+import MainDisplay from '../../../components/MainDisplay';
 
 
 const DESK_2_SCANNER = () => {
@@ -18,7 +18,7 @@ const DESK_2_SCANNER = () => {
       <MultiStepForm />
       <LotteriaDegliScontrini />
       <PricingList />
-      <ProductDisplay />
+      <MainDisplay />
     </MainContainer>
   </motion.div>
   )

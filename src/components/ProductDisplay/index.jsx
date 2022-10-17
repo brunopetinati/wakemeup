@@ -1,22 +1,17 @@
 import { useNavigate } from "react-router-dom";
-import { Container, InnerContainer, ProductContainerInfo, PromotionIconsContainer, PromotionIcons, MainProductDisplay, AccessibilityIcons } from './styles';
-import Water from '../../assets/icons/water.png'
-import Promotion1 from '../../assets/icons/promotion1.png'
-import Promotion2 from '../../assets/icons/promotion2.png'
-import Promotion3 from '../../assets/icons/promotion3.png'
-import Leave from '../../assets/icons/leave.png'
+import { InnerContainer, ProductContainerInfo, PromotionIconsContainer, PromotionIcons, MainProductDisplay } from './styles';
+import Water from '../../assets/icons/water.png';
+import Promotion1 from '../../assets/icons/promotion1.png';
+import Promotion2 from '../../assets/icons/promotion2.png';
+import Promotion3 from '../../assets/icons/promotion3.png';
+import Leave from '../../assets/icons/leave.png';
 
-import AccessibilityButton from '../../assets/icons/accessibility.png'
-import Sound from '../../assets/icons/sound button.png'
-import Person from '../../assets/icons/person.png'
-import Ticket from '../../assets/icons/ticket.png'
 
 const ProductDisplay = () => {
 
   const navigate = useNavigate(); 
 
   return (
-  <Container>
     <InnerContainer>
       <ProductContainerInfo>
         <h3>Acqua Minerale Frizzante 1.5 L</h3>
@@ -32,18 +27,7 @@ const ProductDisplay = () => {
           <img src={Leave} alt=""onClick={() => navigate('/')}/>
         </PromotionIcons>
       </PromotionIconsContainer>
-    </InnerContainer>
-    <AccessibilityIcons>
-      <select>
-        <option>Italian</option>
-      </select>
-      <img src={AccessibilityButton} alt="" />
-      <img src={Sound} alt="" />
-      <img src={Person} alt="" />
-      <img src={Ticket} alt="" />
-    </AccessibilityIcons>
-  </Container>);
-
+    </InnerContainer>);
 };
 
 export default ProductDisplay;

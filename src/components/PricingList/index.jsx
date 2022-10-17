@@ -1,7 +1,9 @@
-import { useSelector } from "react-redux";
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
 import Modal from 'react-modal'
+import { creditCard, buonoFedelta, satispay, giftCard } from '../../store/modules/payment/actions'
 import { Container, PricingListHeader, TableContainer, InnerContainer, InnerFirstSelection, InnerSecondSelection, MiniCard,TotalBar, Button, PaymentMethod, ButtonModal } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
 import ProductDetail from '../ProductDetail/index'
@@ -16,8 +18,6 @@ import BancoFedelta from '../../assets/icons/bancofedelta.png'
 import CarteRegalo from '../../assets/icons/carteregalo.png'
 import Satispay from '../../assets/icons/satispay.png'
 
-
-
 const PricingList = () => {
 
   const products = ['logo printed shorts', 'sweat-shirt à fermeture éclair', 'Napolina Tagliatelle', 'Adina Latte', 'Coca Cola', 'logo printed crispy nylon swim shorts']
@@ -28,6 +28,14 @@ const PricingList = () => {
   const handleToggle = () => {
     showModal(!modal);
   };
+
+  const dispatch = useDispatch();
+
+  const handlePayment = (action) => {
+    dispatch(action);
+    navigate('/');
+  };
+
 
   return (
   <Container>
@@ -59,10 +67,10 @@ const PricingList = () => {
         <ModalContainer>
           <h3>Scegli il metodo di pagamento</h3>
           <PaymentMethod>
-            <img src={Bancomat} alt="" />
-            <img src={CarteRegalo} alt="" />
-            <img src={BancoFedelta} alt="" />
-            <img src={Satispay} alt="" />
+            <img src={Bancomat} alt="" onClick={() => handlePayment(creditCard)} />
+            <img src={CarteRegalo} alt="" onClick={() => handlePayment(buonoFedelta)} />
+            <img src={BancoFedelta} alt="" onClick={() => handlePayment(satispay)} />
+            <img src={Satispay} alt="" onClick={() => handlePayment(giftCard)} />
           </PaymentMethod>
           <ButtonModal onClick={() => handleToggle()}>indietro</ButtonModal>
         </ModalContainer>

@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  width: 90vw;
+  height: 35vh;
+  box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5em;
+`;
 
 export const InnerContainer = styled.div`
   display: flex;
@@ -67,3 +79,23 @@ export const PromotionIcons = styled.div`
   }
 `;
 
+export const AccessibilityIcons = styled.div`
+  width: 90%;
+  height: 5vh;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1em;
+
+  img {
+    width: 8vw;
+    height: 3em;
+  };
+
+  img:nth-child(4) {
+    width: 2.4em;
+    height: 2.4em;
+  }
+`;
