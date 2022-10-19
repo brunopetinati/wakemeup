@@ -6,7 +6,7 @@ const LotteriaDegliScontrini = () => {
 
   const step = useSelector((state) => state.step);
 
- return step === 1 && <Container><img src={Ticket} alt="" /><h1>LOTTERIA DEGLI SCONTRINI</h1></Container>
+ return step === 1 && <Container><img src={Ticket} alt="" /><h4>LOTTERIA DEGLI SCONTRINI</h4></Container>
 };
 
 export default LotteriaDegliScontrini;
