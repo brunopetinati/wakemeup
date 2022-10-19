@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from 'react-modal'
+import { standByStep } from '../../store/modules/step/actions';
 import { addBags } from '../../store/modules/bags/actions'
 import { Container, GearIcon, InnerContainer, AccessibilityIcons, BagsModalImage, Button, GreyButton } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
@@ -28,14 +29,16 @@ const ScanItemBarcode = () => {
   };
 
   const handleContinueWithNoBags = () => {
-    navigate('/desk-2-scanner')
+    dispatch(standByStep());
+    navigate('/desk-2-scanner');
   };
 
   const handleToggle = (bags) => {
     if (bags === 0) {
     showModal(!modal)
     } else {
-      navigate('/desk-2-scanner')
+      dispatch(standByStep());
+      navigate('/desk-2-scanner');
     };
   };
 

@@ -10,7 +10,7 @@ import Transactioncomplete from '../../assets/icons/transactioncomplete.png'
 const MultiStepForm = () => {
 
   const step = useSelector((state) => state.step);
-  const titles = ['Scan Barcode', 'Payment \n Option', 'Payment', 'Transaction \n Complete']
+  const titles = ['Scannerizza i prodotti', 'Schegli il tipo di Pagamento', 'Effetuare il pagamento', 'Transazione eseguita']
   const icons = [ Scanbarcode, Paymentopt, Payment, Transactioncomplete]
 
   useEffect(()=>{},[step])
