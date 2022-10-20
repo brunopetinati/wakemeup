@@ -6,7 +6,7 @@ import Negative from '../../assets/icons/-.png'
 
 export const ButtonsBagContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   height: 100%;
   margin-top: 2%;

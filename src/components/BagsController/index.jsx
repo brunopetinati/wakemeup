@@ -15,14 +15,15 @@ const BagsController = () => {
     <span>Passa i prodotti sulla lettrice uno alla volta</span>
     <InnerContainer>
       <BagsContainer>
+        <ImageScanner src={Scanner} />
         <ImageBag src={Bags} />
-        <StyledSpan>Hai bisogno di aggiungere sacchetti? {bags} </StyledSpan>
+        <StyledSpan>Hai bisogno di aggiungere sacchetti?</StyledSpan>
       </BagsContainer>
       <AddRemoveBags />
-      <ImageScanner src={Scanner} />
     </InnerContainer>
     <Button onClick={() => navigate('/')}>Esci</Button>
-  </Container>)
+  </Container>
+  )
 };
 
 export default BagsController;
