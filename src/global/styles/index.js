@@ -20,6 +20,10 @@ export const MainContainer = styled.div`
   padding-top: 1em;
   width: 100vw;
   height: 100vh;
+
+  @media (min-width: 769px) {
+    height: 200vh;
+  }
 `;
 
 export const globalModal = {
