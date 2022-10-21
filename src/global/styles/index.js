@@ -16,8 +16,8 @@ export const MainContainer = styled.div`
   display:flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background: #F5F5F5;
-  padding-top: 1em;
   width: 100vw;
   height: 100vh;
 `;
@@ -26,7 +26,8 @@ export const InnerContainer = styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
-  width 40vw;
+  width 50vw;
+  height: 90vh;
 `; 
 
 export const globalModal = {

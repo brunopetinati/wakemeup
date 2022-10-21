@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-  width: 50vw;
+  width: 48vw;
   height: 90vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -11,35 +11,34 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
+  margin-right: 3vw;
+
   span {
-    margin-top: 1em;
+    margin: 1.5em;
     font-family: Georgia, serif;
     font-style: italic;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: #5c6272;
   }
-
 `;
 
 export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 50%;
-  margin: 1.5em;
+  height: 60%;
 `;
 
 export const BagsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 30em;
-  height: 80%;
+  height: 70%;
   font-size: 0.8em;
 `;
 
@@ -54,7 +53,6 @@ export const Button = styled.button`
   border: none;
   color: #FFFFFF;
   font-weight: bolder;
-  margin: -1em;
 `;
 
 export const ImageBag = styled.img`
@@ -68,5 +66,4 @@ export const ImageScanner = styled.img`
 
 export const StyledSpan = styled.span`
   text-align: center;
-  width: 10em;
 `;

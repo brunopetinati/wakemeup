@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addBags, removeBags } from '../../store/modules/bags/actions';
-import { GreenButtonBag, RedButtonBag, ButtonsBagContainer } from './styles';
+import { GreenButtonBag, RedButtonBag, ButtonsBagContainer, ZeroButtonBag } from './styles';
 
 const AddRemoveBags = () => {
 
@@ -10,7 +10,7 @@ const AddRemoveBags = () => {
   return (
     <ButtonsBagContainer>
       <RedButtonBag onClick={() => dispatch(removeBags(bags))}/>
-      <div>{bags}</div>
+      <ZeroButtonBag>{bags}</ZeroButtonBag>
       <GreenButtonBag onClick={() => dispatch(addBags(1))}/>
     </ButtonsBagContainer>
   );

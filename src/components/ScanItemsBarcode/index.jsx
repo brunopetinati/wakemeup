@@ -6,9 +6,8 @@ import { standByStep } from '../../store/modules/step/actions';
 import { addBags } from '../../store/modules/bags/actions'
 import { Container, GearIcon, InnerContainer, AccessibilityIcons, BagsModalImage, Button, GreyButton } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
-import Group9 from '../../assets/icons/Group 9.png'
+import Group9 from '../../assets/icons/group9.png'
 import Gear from '../../assets/icons/gear.png'
-//import Italian from '../../assets/icons/italian.png'
 import AccessibilityButton from '../../assets/icons/accessibility.png'
 import Sound from '../../assets/icons/sound button.png'
 import Person from '../../assets/icons/person.png'
@@ -51,18 +50,13 @@ const ScanItemBarcode = () => {
       <Container>
         <InnerContainer>
           <GearIcon src={Gear}/>
-          <h1>Scan Items Barcode</h1>
+          <h1>Nostro Supermercato</h1>
         </InnerContainer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Teniamo alla salute dei nostri clienti, abbiamo idee che vanno oltre la semplice gestione o vendita di beni</p>
         <img src={Group9} alt="" onClick={() => handleToggle(bags)}></img>
         <AccessibilityIcons>
-          <select>
-            <option>Italian</option>
-          </select>
           <img src={AccessibilityButton} alt="" />
           <img src={Sound} alt="" />
-          <img src={Person} alt="" />
-          <img src={Ticket} alt="" />
         </AccessibilityIcons>
       </Container>
       <Modal
