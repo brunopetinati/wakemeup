@@ -1,6 +1,6 @@
 import { NEXT_STEP, PREVIOUS_STEP, CLEAN_STEP } from "./action-types";
 
-const stepReducer = (state = 1, action) => {
+const stepReducer = (state = '', action) => {
   switch (action.type) {
     case NEXT_STEP:
       return state - 0 + 1;
