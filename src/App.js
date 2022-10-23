@@ -1,6 +1,8 @@
 import AppRoutes from "./routes"
 import Modal from 'react-modal'
 import { createGlobalStyle } from 'styled-components';
+import LanguageSelector from './components/LanguageSelector';
+import { MainContainer } from './global/styles/index';
 
 Modal.setAppElement('#root')
 
@@ -10,6 +12,7 @@ function App() {
   
   return (
     <>
+      <LanguageSelector />
       <GlobalStyle />
       <AppRoutes />
     </>

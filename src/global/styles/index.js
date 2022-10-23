@@ -15,7 +15,7 @@ export const AdvertiseContainer = styled.div`
 export const MainContainer = styled.div`
   display:flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background: #F5F5F5;
   width: 100vw;

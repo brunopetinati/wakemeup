@@ -4,6 +4,7 @@ import MultiStepForm from '../../components/MultiStep';
 import LotteriaDegliScontrini from '../../components/LotteriaDegliScontrini';
 import BagsController from '../../components/BagsController';
 import ScanItemBarcode from '../../components/ScanItemsBarcode';
+import LanguageSelector from "../../components/LanguageSelector";
 
 
 const DESK_1_INIT = () => {
@@ -20,7 +21,7 @@ const DESK_1_INIT = () => {
         <LotteriaDegliScontrini />
         <ScanItemBarcode />
       </InnerContainer>
-        <BagsController />
+      <BagsController />
     </MainContainer>
   </motion.div>
   )

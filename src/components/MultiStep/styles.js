@@ -81,7 +81,7 @@ export const StepIconsContainer = styled.div`
   justify-self: center;
   width: 90%;
   height: 25%;
-  margin-top: 1vh;
+  margin-top: 1em;
 
   img {
     width: 4vw;
