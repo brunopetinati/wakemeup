@@ -53,7 +53,7 @@ export const GreenButtonModal = styled.button`
   height: 8em;
   background: #3DD5A1;
   color: white;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;
@@ -67,7 +67,7 @@ export const BlueButtonModal = styled.button`
   height: 8em;
   background: #6591C5;
   color: white;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;

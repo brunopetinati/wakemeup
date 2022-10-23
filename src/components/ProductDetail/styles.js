@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const ProductName = styled.span`
   margin-left: 2em;
   font-style: italic;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 100;
   width: 60%;
   height: 3em;

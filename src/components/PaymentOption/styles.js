@@ -23,7 +23,7 @@ export const InnerContainer = styled.div`
     right: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
-    font-family: Georgia, serif;
+    font-family: 'Inter', sans-serif;
     font-style: italic;
     font-weight: 100;
     font-size: 1.5em;

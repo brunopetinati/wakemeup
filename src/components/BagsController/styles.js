@@ -15,7 +15,7 @@ export const Container = styled.div`
 
   span {
     margin: 1.5em;
-    font-family: Georgia, serif;
+    font-family: 'Inter', sans-serif;
     font-style: italic;
     font-weight: 100;
     font-size: 2.5em;

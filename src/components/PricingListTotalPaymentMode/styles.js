@@ -13,7 +13,7 @@ export const Container = styled.div`
   text-align: center;
   color: white;
   font-style: italic;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-size: 1.5em;
 `;

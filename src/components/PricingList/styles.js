@@ -20,7 +20,7 @@ export const PricingListHeader = styled.div`
   border-radius: 20px 20px 0px 0px;
 
   span {
-    font-family: Georgia, serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 100;
     font-size: 1.3em;
     color: white;
