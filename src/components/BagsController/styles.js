@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 48vw;
-  height: 90vh;
+  height: 87vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -45,14 +45,16 @@ export const BagsContainer = styled.div`
 
 
 export const Button = styled.button`
-  background: #FF8D8D;
-  height: 3.25em;
-  width: 20em;
-  border-radius: 1.2em;
+  background: #FF3A3A;
+  height: 7vh;
+  width: 100%;
+  border-radius: 26.3319px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   color: #FFFFFF;
   font-weight: bolder;
+  font-size: 24px;
+  letter-spacing: 1px;
 `;
 
 export const ImageBag = styled.img`

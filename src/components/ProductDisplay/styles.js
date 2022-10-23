@@ -19,7 +19,7 @@ export const ProductContainerInfo = styled.div`
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #4a4a4a;
 
   h3 {

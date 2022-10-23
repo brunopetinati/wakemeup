@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
-import { MainContainer } from '../../../global/styles/index'
+import { MainContainer, InnerContainer, MarginRightContainer } from '../../../global/styles/index'
 import MultiStepForm from '../../../components/MultiStep'
 import LotteriaDegliScontrini from '../../../components/LotteriaDegliScontrini';
 import PricingListTotal from '../../../components/PricingListTotal';
@@ -21,10 +21,14 @@ const DESK_2_PAYMENT = () => {
     transition={{ duration: 0.8 }}
   >
     <MainContainer>
-      <MultiStepForm />
-      <LotteriaDegliScontrini />
-      {step === 3 ? <PricingListPaymentMode /> : step === 4 ? <PricingListPaymentMode doubleMessage={true} /> : <PricingListTotal /> }
-      <MainDisplay />
+      <InnerContainer>
+        <MultiStepForm />
+        <LotteriaDegliScontrini />
+        <MainDisplay />
+      </InnerContainer>
+      <MarginRightContainer>
+        {step === 3 ? <PricingListPaymentMode /> : step === 4 ? <PricingListPaymentMode doubleMessage={true} /> : <PricingListTotal /> }
+      </MarginRightContainer>
     </MainContainer>
   </motion.div>
   )

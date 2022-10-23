@@ -28,7 +28,11 @@ export const InnerContainer = styled.div`
   align-items: center;
   width 50vw;
   height: 90vh;
-`; 
+`;
+
+export const MarginRightContainer = styled.div`
+  margin-right: 3vw;
+`;
 
 export const globalModal = {
   content: {

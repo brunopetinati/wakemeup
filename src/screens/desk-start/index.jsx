@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Container, InnerContainer, AccessibilityButton } from './styles'
+import { nextStep } from "../../store/modules/step/actions";
+import { useDispatch } from "react-redux";
 
 const BenVenuto = () => {
 
   const navigate = useNavigate(); 
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(nextStep());
+    navigate('/desk-1-init');
+  };
 
   return(
   <motion.div
@@ -14,7 +22,7 @@ const BenVenuto = () => {
     transition={{ duration: 2 }}
   >
     <Container>
-      <InnerContainer onClick={() => navigate('/desk-1-init')}>benvenuto</InnerContainer>
+      <InnerContainer onClick={() => handleClick()}>benvenuto</InnerContainer>
       <AccessibilityButton />
     </Container>
   </motion.div>)

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
-  height: 35vh;
+  width: 45vw;
+  height: 69.7vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -10,7 +10,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 1.5em;
 `;
 
 export const InnerContainer = styled.div`

@@ -1,4 +1,4 @@
-import { NEXT_STEP, PREVIOUS_STEP, STAND_BY_STEP } from "./action-types";
+import { NEXT_STEP, PREVIOUS_STEP, STAND_BY_STEP, CLEAN_STEP } from "./action-types";
 
 export const nextStep = (step) => ({
   type: NEXT_STEP,
@@ -12,5 +12,10 @@ export const previousStep = (step) => ({
 
 export const standByStep = (step) => ({
   type: STAND_BY_STEP,
+  step,
+});
+
+export const cleanStep = (step) => ({
+  type: CLEAN_STEP,
   step,
 });

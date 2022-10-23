@@ -19,7 +19,17 @@ export const InnerContainer = styled.div`
   border-radius: 20px;
   background: #FFF;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+
+  img {
+    margin-left: 2em;
+  }
+
+  div {
+    display: flex;
+    margin-right: 2em;
+  }
 `;

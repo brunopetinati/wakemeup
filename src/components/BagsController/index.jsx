@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import AddRemoveBags from "../AddRemoveBags";
+import { cleanStep } from "../../store/modules/step/actions";
 import { Container, InnerContainer, BagsContainer, Button, ImageBag, ImageScanner, StyledSpan } from './styles';
 import Scanner from '../../assets/icons/scanner.png'
 import Bags from '../../assets/icons/bags.png'
@@ -8,7 +9,13 @@ import Bags from '../../assets/icons/bags.png'
 const BagsController = () => {
 
   const navigate = useNavigate(); 
+  const dispatch = useDispatch();
   const bags = useSelector((state) => state.bags);
+
+  const handleClick = () => {
+    dispatch(cleanStep());
+    navigate('/');
+  };
 
   return (
   <Container>
@@ -21,7 +28,7 @@ const BagsController = () => {
       </BagsContainer>
       <AddRemoveBags />
     </InnerContainer>
-    <Button onClick={() => navigate('/')}>Esci</Button>
+    <Button onClick={() => handleClick()}>USCIRE</Button>
   </Container>
   )
 };

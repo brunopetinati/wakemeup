@@ -2,17 +2,20 @@ import AppRoutes from "./routes"
 import Modal from 'react-modal'
 import { createGlobalStyle } from 'styled-components';
 import LanguageSelector from './components/LanguageSelector';
-import { MainContainer } from './global/styles/index';
+import { useSelector } from "react-redux";
 
 Modal.setAppElement('#root')
 
 
 function App() {
+
   document.title = "Wake Me Up"
-  
+  const step = useSelector((state) => state.step);
+  console.log(step)
+
   return (
     <>
-      <LanguageSelector />
+      {step != '' && <LanguageSelector />}
       <GlobalStyle />
       <AppRoutes />
     </>
