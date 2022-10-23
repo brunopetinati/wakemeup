@@ -93,6 +93,7 @@ export const StepTittleContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center; 
+  text-align: center;
   width: 100%;
   height: 30%;
   white-space: break-spaces;
@@ -100,7 +101,6 @@ export const StepTittleContainer = styled.div`
   font-style: normal;
   font-weight: 500;
   text-shadow: 1px 2px 2px rgba(93, 97, 116, 0.25);
-  color: #ABABAB;
-  font-size: 8px;
-  text-align: center;
+  color: #3DD5A1;
+  font-size: 12px;
 `;  

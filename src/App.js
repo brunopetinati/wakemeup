@@ -9,7 +9,6 @@ Modal.setAppElement('#root')
 
 function App() {
 
-  document.title = "Wake Me Up"
   const step = useSelector((state) => state.step);
   console.log(step)
 
@@ -26,6 +25,7 @@ function App() {
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Inter', sans-serif;
+    font-weight: 100;
   }
 `;
 

@@ -27,7 +27,7 @@ const DESK_2_SCANNER = () => {
         <MainDisplay />
       </InnerContainer>
       <MarginRightContainer>
-        {step === 1 ? <PricingList /> : <PricingListTotal />}
+        {step === 2 ? <PricingList /> : <PricingListTotal />}
       </MarginRightContainer>
     </MainContainer>
   </motion.div>

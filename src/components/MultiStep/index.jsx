@@ -16,7 +16,7 @@ const MultiStepForm = () => {
   useEffect(()=>{},[step])
   
   const ShowStep = () => {
-    if(step === 1) {
+    if(step === 1 || step === 2) {
       return (
         <ProgressBarStyle>
           <BiggerBallStep />
@@ -28,7 +28,7 @@ const MultiStepForm = () => {
           <SmallerBallStep />
         </ProgressBarStyle>
         );
-    } else if (step === 2) {
+    } else if (step === 3) {
         return (
           <ProgressBarStyle>
               <BiggerBallStep />
@@ -40,7 +40,7 @@ const MultiStepForm = () => {
               <SmallerBallStep />
           </ProgressBarStyle>
         );
-    } else if (step === 3) {
+    } else if (step === 4) {
         return (
           <ProgressBarStyle>
               <BiggerBallStep />

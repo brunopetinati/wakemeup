@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from 'react-modal'
-import { standByStep } from '../../store/modules/step/actions';
+import { nextStep } from '../../store/modules/step/actions';
 import { addBags } from '../../store/modules/bags/actions'
 import { Container, GearIcon, InnerContainer, AccessibilityIcons, BagsModalImage, Button, GreyButton } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
@@ -10,8 +10,6 @@ import Group9 from '../../assets/icons/group9.png'
 import Gear from '../../assets/icons/gear.png'
 import AccessibilityButton from '../../assets/icons/accessibility.png'
 import Sound from '../../assets/icons/sound button.png'
-import Person from '../../assets/icons/person.png'
-import Ticket from '../../assets/icons/ticket.png'
 import x from '../../assets/icons/times.svg'
 import Bag from '../../assets/icons/bags.png'
 
@@ -28,7 +26,7 @@ const ScanItemBarcode = () => {
   };
 
   const handleContinueWithNoBags = () => {
-    dispatch(standByStep());
+    dispatch(nextStep());
     navigate('/desk-2-scanner');
   };
 
@@ -36,7 +34,7 @@ const ScanItemBarcode = () => {
     if (bags === 0) {
     showModal(!modal)
     } else {
-      dispatch(standByStep());
+      dispatch(nextStep());
       navigate('/desk-2-scanner');
     };
   };

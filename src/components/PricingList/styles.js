@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
-  height: 25vh;
+  width: 48vw;
+  height: 87vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 `;
 
 export const PricingListHeader = styled.div`
@@ -30,7 +30,7 @@ export const PricingListHeader = styled.div`
 export const TableContainer = styled.div`
   display:flex;
   flex-direction: column;
-  height: 100%;
+  height: 40vh;
   overflow: scroll;
 `;
 
@@ -38,29 +38,41 @@ export const InnerContainer = styled.div``;
 
 export const InnerFirstSelection = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 1em;
-  margin-left: 1em;
+  height: 24vh;
 `;
 
 export const MiniCard = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 
   background: #F5F5F5;
   box-shadow: 0px 2.99069px 2.99069px rgba(0, 0, 0, 0.25);
   border-radius: 15.9505px;
   height: 6em;
-  width: 5em;
+  width: 90%;
 
   img {
     width: 2em;
   };
+`;
+
+export const MiniCardInfo = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 10em;
+  margin-left: 2em;
+
+  span {
+    font-size: 30px;
+  }
 `;
 
 export const InnerSecondSelection = styled.div`
@@ -77,7 +89,7 @@ export const TotalBar = styled.div`
   background: #F5F5F5;
   box-shadow: 0px 2.99069px 2.99069px rgba(0, 0, 0, 0.25);
   width: 80%;
-  height: 1em;
+  height: 4em;
   border-radius: 15.8644px;
 
   display: flex;
@@ -97,7 +109,7 @@ export const Button = styled.button`
   box-shadow: 0px 2.99069px 2.99069px rgba(0, 0, 0, 0.25);
   border: none;
   width: 90%;
-  height: 3em;
+  height: 7em;
   border-radius: 15.8644px;
   color: white;
   font-weight: 700;
