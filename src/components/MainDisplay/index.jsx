@@ -22,7 +22,7 @@ const MainDisplay = () => {
   },[payment])
 
   const handleClick = () => {
-    dispatch(previousStep());
+    dispatch(previousStep(2));
     navigate('/');
   };
 

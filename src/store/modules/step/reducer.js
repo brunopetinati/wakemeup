@@ -6,7 +6,13 @@ const stepReducer = (state = 0, action) => {
       return state + 1;
 
     case PREVIOUS_STEP:
-      return state - 1;
+
+      const { step } = action;
+
+      if(!step) {
+        return state - 1
+      }
+      return state - step;
 
     case CLEAN_STEP:
       return state = '';
