@@ -51,8 +51,8 @@ const PricingList = () => {
         <MiniCard><img src={Bags} alt="" /><MiniCardInfo><AddRemoveBags /></MiniCardInfo></MiniCard>
       </InnerFirstSelection>
       <InnerSecondSelection>
-        <TotalBar><span>Totale</span><img src={EuroImage} alt=""/><div>130.50</div></TotalBar>
-        <Button onClick={() => handleToggle()}>Pagare</Button>
+        <TotalBar><img src={EuroImage} alt=""/><div>130.50</div></TotalBar>
+        <Button onClick={() => handleToggle()}>PAGARE</Button>
       </InnerSecondSelection>
     </InnerContainer>
       <Modal

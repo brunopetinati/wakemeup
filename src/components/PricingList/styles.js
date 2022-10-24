@@ -94,12 +94,20 @@ export const TotalBar = styled.div`
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 1em;
 
   img {
-    width: 20px;
+    width: 5vw;
+    margin-left: 2em;
+  }
+
+
+  div {
+    font-size: xxx-large;
+    font-weight: 500;
+    margin-left: 1em;
   }
 `;
 
@@ -109,10 +117,11 @@ export const Button = styled.button`
   box-shadow: 0px 2.99069px 2.99069px rgba(0, 0, 0, 0.25);
   border: none;
   width: 90%;
-  height: 7em;
+  height: 3em;
   border-radius: 15.8644px;
   color: white;
   font-weight: 700;
+  font-size: xx-large;
 `;
 
 export const PaymentMethod = styled.div`

@@ -6,7 +6,7 @@ export const InnerContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 60vh;
 `;
 
 export const MainProductDisplay = styled.img`

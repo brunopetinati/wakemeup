@@ -4,7 +4,7 @@ const paymentReducer = (state = '', action) => {
 
   switch (action.type) {
     case CREDIT_CARD:
-      state = 'credit_card'
+      state = 'credit_card';
       return state;
     
     case BUONO_FEDELTA:

@@ -7,8 +7,8 @@ import PaymentOption from "../PaymentOption";
 import ProductDisplay from '../ProductDisplay';
 import AccessibilityButton from '../../assets/icons/accessibility.png';
 import Sound from '../../assets/icons/sound button.png';
-import Person from '../../assets/icons/person.png';
-import Ticket from '../../assets/icons/ticket.png';
+import Leave from '../../assets/icons/leave.png';
+
 
 const MainDisplay = () => {
   
@@ -27,14 +27,10 @@ const MainDisplay = () => {
   <Container>
     {payment ? <PaymentOption /> : <ProductDisplay /> }
     <AccessibilityIcons>
-      <select>
-        <option>Italian</option>
-      </select>
       <img src={AccessibilityButton} alt="" />
       <img src={Sound} alt="" />
-      <img src={Person} alt="" />
-      <img src={Ticket} alt="" />
-      {payment && <Button onClick={() => handleClick()}>indietro</Button>}
+      <img src={Leave} alt="" />
+      {payment && <Button onClick={() => handleClick()}>INDIETRO</Button>}
     </AccessibilityIcons>
   </Container>);
 

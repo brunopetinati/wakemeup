@@ -8,7 +8,7 @@ export const Container = styled.div`
   background: #FFF;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 `;
 
@@ -85,19 +85,22 @@ export const AccessibilityIcons = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-top: 1em;
 
   img {
     width: 8vw;
-    height: 3em;
+    height: 4em;
   };
 
-  img:nth-child(4) {
-    width: 2.4em;
-    height: 2.4em;
-  }
+
+  img:nth-child(3) {
+    margin-left: 3em;
+    
+  };
 `;
+
+
 
 export const Button = styled.button`
   border:none;
@@ -106,8 +109,8 @@ export const Button = styled.button`
   border-radius: 15.544px;
   color: white;
   font-weight: 700;
-  font-size: 24px;
-  width: 20em;
-  height: 2em;
-  margin-left: 4em;
+  font-size: 16px;
+  width: 9em;
+  height: 5em;
+  border-radius: 21.1599px;
 `;

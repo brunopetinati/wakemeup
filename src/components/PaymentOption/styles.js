@@ -20,7 +20,6 @@ export const InnerContainer = styled.div`
 
   span {
     position: relative;
-    right: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
     font-family: 'Inter', sans-serif;

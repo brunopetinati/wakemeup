@@ -45,7 +45,8 @@ export const globalModal = {
     width: '40.5em',
     height: '55em',
     backgroundColor: '#9d9d9d',
-    borderRadius: '3%'
+    borderRadius: '3%',
+    zIndex: '10'
   }
 }
 
@@ -61,4 +62,5 @@ export const ModalContainer = styled.div`
   color: #F5F5F5;
   height: 90%;
   text-align: center;
+  z-index: 5;
 `;
