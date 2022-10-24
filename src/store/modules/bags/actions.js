@@ -13,6 +13,7 @@ export const removeBags = (bag) => ({
   bag,
 });
 
+//TO DO: remover função caso não esteja sendo usada
 export const zeroBags = (bag) => ({
   type: ZERO_BAG,
   bag,

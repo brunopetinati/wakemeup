@@ -10,13 +10,13 @@ import Transactioncomplete from '../../assets/icons/transactioncomplete.png'
 const MultiStepForm = () => {
 
   const step = useSelector((state) => state.step);
-  const titles = ['Scan Barcode', 'Payment \n Option', 'Payment', 'Transaction \n Complete']
+  const titles = ['Scannerizza i prodotti', 'Schegli il tipo di Pagamento', 'Effetuare il pagamento', 'Transazione eseguita']
   const icons = [ Scanbarcode, Paymentopt, Payment, Transactioncomplete]
 
   useEffect(()=>{},[step])
   
   const ShowStep = () => {
-    if(step === 1) {
+    if(step === 1 || step === 2) {
       return (
         <ProgressBarStyle>
           <BiggerBallStep />
@@ -28,7 +28,7 @@ const MultiStepForm = () => {
           <SmallerBallStep />
         </ProgressBarStyle>
         );
-    } else if (step === 2) {
+    } else if (step === 3) {
         return (
           <ProgressBarStyle>
               <BiggerBallStep />
@@ -40,7 +40,7 @@ const MultiStepForm = () => {
               <SmallerBallStep />
           </ProgressBarStyle>
         );
-    } else if (step === 3) {
+    } else if (step === 4) {
         return (
           <ProgressBarStyle>
               <BiggerBallStep />

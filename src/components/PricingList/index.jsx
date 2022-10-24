@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Modal from 'react-modal'
 import { nextStep } from '../../store/modules/step/actions'
 import { creditCard, buonoFedelta, satispay, giftCard } from '../../store/modules/payment/actions'
-import { Container, PricingListHeader, TableContainer, InnerContainer, InnerFirstSelection, InnerSecondSelection, MiniCard,TotalBar, Button, PaymentMethod, ButtonModal } from './styles';
+import { Container, PricingListHeader, TableContainer, InnerContainer, InnerFirstSelection, InnerSecondSelection, MiniCard, MiniCardInfo, TotalBar, Button, PaymentMethod, ButtonModal } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
 import ProductDetail from '../ProductDetail/index'
 import AddRemoveBags from '../AddRemoveBags/index'
@@ -46,14 +46,13 @@ const PricingList = () => {
     </TableContainer>
     <InnerContainer>
       <InnerFirstSelection>
-        <MiniCard><div>6</div><img src={Cart} alt="" /></MiniCard>
-        <MiniCard><div>130kg</div><img src={Weight} alt="" /></MiniCard>
-        <MiniCard><div>{bags}</div><img src={Bags} alt="" /></MiniCard>
-        <AddRemoveBags />
+        <MiniCard><img src={Cart} alt="" /><MiniCardInfo><span>6</span></MiniCardInfo></MiniCard>
+        <MiniCard><img src={Weight} alt="" /><MiniCardInfo><span>130kg</span></MiniCardInfo></MiniCard>
+        <MiniCard><img src={Bags} alt="" /><MiniCardInfo><AddRemoveBags /></MiniCardInfo></MiniCard>
       </InnerFirstSelection>
       <InnerSecondSelection>
-        <TotalBar><span>Totale</span><img src={EuroImage} alt=""/><div>130.50</div></TotalBar>
-        <Button onClick={() => handleToggle()}>Pagare</Button>
+        <TotalBar><img src={EuroImage} alt=""/><div>130.50</div></TotalBar>
+        <Button onClick={() => handleToggle()}>PAGARE</Button>
       </InnerSecondSelection>
     </InnerContainer>
       <Modal

@@ -12,10 +12,11 @@ export const Container = styled.div`
 export const ProductName = styled.span`
   margin-left: 2em;
   font-style: italic;
-  font-family: Georgia, serif;
-  font-weight: 100;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
   width: 60%;
   height: 3em;
+  font-size: 14px;
 `;
 
 export const PriceDisplay = styled.div`

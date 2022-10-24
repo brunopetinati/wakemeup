@@ -1,29 +1,30 @@
 import styled from "styled-components";
 
 
-// TO DO: acessibilidade
-export const AdvertiseContainer = styled.div`
-  height: 50vh;
-  display:none;
-
-  @media (max-width: 768px) {
-    height: 50vh;
-    display: flex;
-  }
-`;
-
 export const MainContainer = styled.div`
   display:flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   background: #F5F5F5;
-  padding-top: 1em;
   width: 100vw;
   height: 100vh;
 
   @media (min-width: 769px) {
     height: 200vh;
   }
+`;
+
+export const InnerContainer = styled.div`
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width 50vw;
+  height: 90vh;
+`;
+
+export const MarginRightContainer = styled.div`
+  margin-right: 3vw;
 `;
 
 export const globalModal = {
@@ -37,7 +38,8 @@ export const globalModal = {
     width: '40.5em',
     height: '55em',
     backgroundColor: '#9d9d9d',
-    borderRadius: '3%'
+    borderRadius: '3%',
+    zIndex: '10'
   }
 }
 
@@ -46,7 +48,7 @@ export const ModalContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;

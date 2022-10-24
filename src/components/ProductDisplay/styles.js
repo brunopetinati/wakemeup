@@ -1,25 +1,44 @@
 import styled from "styled-components";
 
-
 export const InnerContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 60vh;
+`;
+
+export const MainProductDisplay = styled.img`
+  height: 25em;
+  width: 11em;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 70%;
+`; 
+
+export const ImagePriceDisplay = styled.div`
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
 `;
 
 export const ProductContainerInfo = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 5vh;
   margin-top: 2em;
   text-align: left;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #4a4a4a;
 
   h3 {
@@ -31,18 +50,13 @@ export const ProductContainerInfo = styled.div`
   };
 `;
 
-export const MainProductDisplay = styled.img`
-  margin-top: 1em;
-  margin-left: 8em;
-  height: 11em;
-  width: fit-content;
-`;
-
 export const PromotionIconsContainer = styled.div`
   display: flex;
   flex-direction: row;
   height: 100%;
   margin-top: 3em;
+  height: 20vh;
+
   
   span {
     font-weight: normal;
@@ -57,13 +71,8 @@ export const PromotionIcons = styled.div`
   justify-content: space-around;
 
   img {
-    height: 4em;
-    width: 4em;
+    height: 2em;
+    width: 2em;
   };
-
-  img:nth-child(5) {
-    width: 3em;
-    height: 4em;
-  }
 `;
 

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import AddRemoveBags from "../AddRemoveBags";
+import { cleanStep } from "../../store/modules/step/actions";
 import { Container, InnerContainer, BagsContainer, Button, ImageBag, ImageScanner, StyledSpan } from './styles';
 import Scanner from '../../assets/icons/scanner.png'
 import Bags from '../../assets/icons/bags.png'
@@ -8,21 +9,28 @@ import Bags from '../../assets/icons/bags.png'
 const BagsController = () => {
 
   const navigate = useNavigate(); 
+  const dispatch = useDispatch();
   const bags = useSelector((state) => state.bags);
+
+  const handleClick = () => {
+    dispatch(cleanStep());
+    navigate('/');
+  };
 
   return (
   <Container>
     <span>Passa i prodotti sulla lettrice uno alla volta</span>
     <InnerContainer>
       <BagsContainer>
+        <ImageScanner src={Scanner} />
         <ImageBag src={Bags} />
-        <StyledSpan>Hai bisogno di aggiungere sacchetti? {bags} </StyledSpan>
+        <StyledSpan>Hai bisogno di aggiungere sacchetti?</StyledSpan>
       </BagsContainer>
       <AddRemoveBags />
-      <ImageScanner src={Scanner} />
     </InnerContainer>
-    <Button onClick={() => navigate('/')}>Esci</Button>
-  </Container>)
+    <Button onClick={() => handleClick()}>USCIRE</Button>
+  </Container>
+  )
 };
 
 export default BagsController;

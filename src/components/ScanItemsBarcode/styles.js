@@ -1,32 +1,34 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
-  height: 35vh;
+  width: 45vw;
+  height: 69.7vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 1.5em;
   
 
   h1 {
-    color: #3DD5A1;
-    margin: 0 auto;
+    color: #000000;
+    text-align: center;
+    margin-top: 2em;
   };
 
   p {
-    color: #3DD5A1;
+    color: #000000;
     width: 80%;
-    text-align: center;
+    text-align: center; 
+    font-size: x-large;
   };
 
   img {
+    margin-top: 3em;
     width: 80%;
-    height: 50%;
+    height: 40%;
   };
 
 `;
@@ -35,7 +37,6 @@ export const InnerContainer = styled.div`
   display:flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 1em;
 `;
 
 export const GearIcon = styled.img`
@@ -48,12 +49,11 @@ export const GearIcon = styled.img`
 export const AccessibilityIcons = styled.div`
   width: 80%;
   height: 5vh;
-  margin-bottom: 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 1em;
+  margin-top: 2em;
   
   img {
     width: 8vw;

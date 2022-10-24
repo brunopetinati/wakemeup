@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { nextStep } from '../../store/modules/step/actions';
 import { confirming } from '../../store/modules/payment/actions';
 import ProductDetail from '../ProductDetail';
-import { Container, Header, Button, GreenButtonModal, BlueButtonModal } from './styles';
+import { Container, Header, Button, GreenButtonModal, BlueButtonModal, MaxItensContainer } from './styles';
 import Cart from '../../assets/icons/white-cart.png';
 import Modal from 'react-modal';
 import { globalModal, ModalContainer } from '../../global/styles/index';
@@ -37,8 +37,10 @@ const PricingListTotal = () => {
   <>
     <Container>
       <Header><img src={Cart} alt="" />6 articoli</Header>
-      {products.map((product, index) => <ProductDetail productName={product} key={index}/>)}
-      <Button onClick={() => handleToggle()}>€ 130.65</Button>
+      <MaxItensContainer>
+        {products.map((product, index) => <ProductDetail productName={product} key={index}/>)}
+      </MaxItensContainer>
+      <Button onClick={() => handleToggle()}>PAGARE <strong>€ 130.65</strong></Button>
     </Container>
     <Modal
       isOpen={modal}

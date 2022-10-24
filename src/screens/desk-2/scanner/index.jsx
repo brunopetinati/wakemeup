@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
-import { MainContainer } from '../../../global/styles/index'
+import { MainContainer, InnerContainer, MarginRightContainer } from '../../../global/styles/index'
 import MultiStepForm from '../../../components/MultiStep'
 import LotteriaDegliScontrini from '../../../components/LotteriaDegliScontrini';
 import PricingList from '../../../components/PricingList';
@@ -21,10 +21,14 @@ const DESK_2_SCANNER = () => {
     transition={{ duration: 0.8 }}
   >
     <MainContainer>
-      <MultiStepForm />
-      <LotteriaDegliScontrini />
-      {step === 1 ? <PricingList /> : <PricingListTotal />}
-      <MainDisplay />
+      <InnerContainer>
+        <MultiStepForm />
+        <LotteriaDegliScontrini />
+        <MainDisplay />
+      </InnerContainer>
+      <MarginRightContainer>
+        {step === 2 ? <PricingList /> : <PricingListTotal />}
+      </MarginRightContainer>
     </MainContainer>
   </motion.div>
   )

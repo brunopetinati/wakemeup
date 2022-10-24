@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MainContainer } from '../../global/styles/index'
+import { MainContainer, InnerContainer } from '../../global/styles/index'
 import MultiStepForm from '../../components/MultiStep';
 import LotteriaDegliScontrini from '../../components/LotteriaDegliScontrini';
 import BagsController from '../../components/BagsController';
@@ -15,10 +15,12 @@ const DESK_1_INIT = () => {
     transition={{ duration: 0.8 }}
   >
     <MainContainer>
-      <MultiStepForm />
-      <LotteriaDegliScontrini />
+      <InnerContainer>
+        <MultiStepForm />
+        <LotteriaDegliScontrini />
+        <ScanItemBarcode />
+      </InnerContainer>
       <BagsController />
-      <ScanItemBarcode />
     </MainContainer>
   </motion.div>
   )

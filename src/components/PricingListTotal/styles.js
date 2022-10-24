@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
-  height: 25vh;
+  width: 48vw;
+  height: 87vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #8AFFD6;
@@ -12,6 +12,10 @@ export const Container = styled.div`
 
   font-style: italic;
   font-weight: 400;
+`;
+
+export const MaxItensContainer = styled.div`
+  height: 70vh;
 `;
 
 export const Header = styled.div`
@@ -35,14 +39,18 @@ export const Header = styled.div`
 export const Button = styled.button`
   border: none;
   background: #32D49D;
-  width: 20em;
-  height: 3em;
+  width: 14em;
+  height: 4em;
   box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.25);
   border-radius: 21.2184px;
   margin-top: 1.5em;
   color: white;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+  flex-diretion: row;
+  justify-content: space-around;
+  align-items: center;
 `;
 
 export const GreenButtonModal = styled.button`
@@ -53,7 +61,7 @@ export const GreenButtonModal = styled.button`
   height: 8em;
   background: #3DD5A1;
   color: white;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;
@@ -67,7 +75,7 @@ export const BlueButtonModal = styled.button`
   height: 8em;
   background: #6591C5;
   color: white;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;

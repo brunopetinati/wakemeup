@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
-  height: 35vh;
+  width: 45vw;
+  height: 69.7vh;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  margin: 1.5em;
 `;
 
 export const InnerContainer = styled.div`
@@ -28,7 +27,7 @@ export const ProductContainerInfo = styled.div`
   height: 100%;
   margin-top: 2em;
   text-align: left;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1.5em;
@@ -86,19 +85,22 @@ export const AccessibilityIcons = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-top: 1em;
 
   img {
     width: 8vw;
-    height: 3em;
+    height: 4em;
   };
 
-  img:nth-child(4) {
-    width: 2.4em;
-    height: 2.4em;
-  }
+
+  img:nth-child(3) {
+    margin-left: 3em;
+    
+  };
 `;
+
+
 
 export const Button = styled.button`
   border:none;
@@ -107,8 +109,8 @@ export const Button = styled.button`
   border-radius: 15.544px;
   color: white;
   font-weight: 700;
-  font-size: 24px;
-  width: 20em;
-  height: 2em;
-  margin-left: 4em;
+  font-size: 16px;
+  width: 9em;
+  height: 5em;
+  border-radius: 21.1599px;
 `;
