@@ -9,6 +9,10 @@ export const MainContainer = styled.div`
   background: #F5F5F5;
   width: 100vw;
   height: 100vh;
+
+  @media (min-width: 769px) {
+    height: 200vh;
+  }
 `;
 
 export const InnerContainer = styled.div`
