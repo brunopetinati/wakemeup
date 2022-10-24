@@ -20,6 +20,7 @@ export const ProgressBarStyle = styled.div`
   width: 100%;
   height: 40%;
   margin-left: 0.9vw;
+  z-index: 0;
 `;
 
 

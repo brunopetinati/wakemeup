@@ -18,6 +18,7 @@ const ProductDisplay = () => {
         <h3>Acqua Minerale Frizzante 1.5 L</h3>
         <span>80057253 Fonti di Vinadio SpA Italy</span>
       </ProductContainerInfo>
+      <h1>€ 1.90</h1>
       <Wrapper>
         <ImagePriceDisplay>
           <MainProductDisplay src={Water} alt="" />
@@ -30,7 +31,6 @@ const ProductDisplay = () => {
           </PromotionIcons>
        </PromotionIconsContainer>
       </Wrapper>
-      <h1>€ 1.90</h1>
     </InnerContainer>);
 };
 

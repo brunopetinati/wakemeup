@@ -7,6 +7,10 @@ export const InnerContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 60vh;
+
+  h1 {
+    margin-top: 2em;
+  }
 `;
 
 export const MainProductDisplay = styled.img`

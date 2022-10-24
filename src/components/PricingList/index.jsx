@@ -65,9 +65,9 @@ const PricingList = () => {
           <h3>Scegli il metodo di pagamento</h3>
           <PaymentMethod>
             <img src={Bancomat} alt="" onClick={() => handlePayment(creditCard)} />
-            <img src={CarteRegalo} alt="" onClick={() => handlePayment(buonoFedelta)} />
-            <img src={BancoFedelta} alt="" onClick={() => handlePayment(satispay)} />
-            <img src={Satispay} alt="" onClick={() => handlePayment(giftCard)} />
+            <img src={CarteRegalo} alt="" onClick={() => handlePayment(giftCard)} />
+            <img src={BancoFedelta} alt="" onClick={() => handlePayment(buonoFedelta)} />
+            <img src={Satispay} alt="" onClick={() => handlePayment(satispay)} />
           </PaymentMethod>
           <ButtonModal onClick={() => handleToggle()}>indietro</ButtonModal>
         </ModalContainer>

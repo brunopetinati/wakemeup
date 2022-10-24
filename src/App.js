@@ -10,7 +10,9 @@ Modal.setAppElement('#root')
 function App() {
 
   const step = useSelector((state) => state.step);
-  console.log(step)
+  const payment = useSelector((state) => state.payment)
+  console.log('step', step)
+  console.log('payment', payment)
 
   return (
     <>
