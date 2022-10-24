@@ -1,17 +1,6 @@
 import styled from "styled-components";
 
 
-// TO DO: acessibilidade
-export const AdvertiseContainer = styled.div`
-  height: 50vh;
-  display:none;
-
-  @media (max-width: 768px) {
-    height: 50vh;
-    display: flex;
-  }
-`;
-
 export const MainContainer = styled.div`
   display:flex;
   flex-direction: row;
@@ -62,5 +51,4 @@ export const ModalContainer = styled.div`
   color: #F5F5F5;
   height: 90%;
   text-align: center;
-  z-index: 5;
 `;

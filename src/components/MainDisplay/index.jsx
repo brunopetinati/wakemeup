@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { previousStep } from "../../store/modules/step/actions";
 import { emptyString } from '../../store/modules/payment/actions';
@@ -14,13 +15,15 @@ const MainDisplay = () => {
   
   const payment = useSelector((state) => state.payment);
   const dispatch = useDispatch();
+  const navigate = useNavigate(); 
+
 
   useEffect(() => {
   },[payment])
 
   const handleClick = () => {
-    dispatch(previousStep());
     dispatch(emptyString());
+    navigate('/');
   };
 
   return (
@@ -29,7 +32,7 @@ const MainDisplay = () => {
     <AccessibilityIcons>
       <img src={AccessibilityButton} alt="" />
       <img src={Sound} alt="" />
-      <img src={Leave} alt="" />
+      {!payment && <img src={Leave} alt="" />}
       {payment && <Button onClick={() => handleClick()}>INDIETRO</Button>}
     </AccessibilityIcons>
   </Container>);
