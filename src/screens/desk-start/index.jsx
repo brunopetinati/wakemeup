@@ -2,17 +2,21 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Container, InnerContainer, AccessibilityButton } from './styles'
 import { nextStep } from "../../store/modules/step/actions";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
+
 
 const BenVenuto = () => {
 
   const navigate = useNavigate(); 
   const dispatch = useDispatch();
+  const step = useSelector((state) => state.step)
 
   const handleClick = () => {
     dispatch(nextStep());
     navigate('/desk-1-init');
   };
+
 
   return(
   <motion.div

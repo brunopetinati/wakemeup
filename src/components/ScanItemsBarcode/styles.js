@@ -47,23 +47,20 @@ export const GearIcon = styled.img`
 `;
 
 export const AccessibilityIcons = styled.div`
-  width: 80%;
+  width: 100%;
   height: 5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 2em;
+  margin-left: 2em;
   
   img {
-    width: 8vw;
+    width: 6vw;
     height: 3em;
+    margin-left: 1em;
   };
-
-  img:nth-child(4) {
-    width: 2.4em;
-    height: 2.4em;
-  }
 `;
 
 /* modal a partir daqui */

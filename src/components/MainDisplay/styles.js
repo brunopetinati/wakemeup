@@ -79,25 +79,25 @@ export const PromotionIcons = styled.div`
 `;
 
 export const AccessibilityIcons = styled.div`
-  width: 90%;
+  width: 100%;
   height: 5vh;
-  margin-bottom: 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 1em;
+  justify-content: flex-start;
+  margin-top: 2em;
+  margin-left: 2em;
 
   img {
-    width: 8vw;
-    height: 4em;
+    width: 6vw;
+    height: 3em;
+    margin-left: 1em;
   };
-
 
   img:nth-child(3) {
-    margin-left: 3em;
-    
-  };
+    height: 4em;
+    margin-left: 8em;
+  }
 `;
 
 

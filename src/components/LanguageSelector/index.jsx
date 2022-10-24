@@ -1,22 +1,24 @@
+import { useSelector } from 'react-redux';
 import { Container, InnerContainer } from './styles'
 import Bizerba from '../../assets/icons/bizerba.png'
 import Person from '../../assets/icons/person.png'
 
 const LanguageSelector = () => {
 
-  return (
+  const step = useSelector((state) => state.step)
+
+  return step === 1 && 
   <Container>
     <InnerContainer>
-      <img src={Bizerba} alt="" />
-      <div>
-        <select>
-          <option>Italian</option>
-        </select>
-        <img src={Person} alt="" />
-      </div>
-    </InnerContainer>
-  </Container>
-  )
+    <img src={Bizerba} alt="" />
+    <div>
+      <select>
+        <option>Italian</option>
+      </select>
+      <img src={Person} alt="" />
+    </div>
+  </InnerContainer>
+</Container>
 };
 
 

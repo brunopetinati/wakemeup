@@ -64,14 +64,14 @@ const ScanItemBarcode = () => {
       >
         <img src={x} onClick={handleCloseModal} style={{width: '1em', marginLeft: '39em', cursor: 'pointer'}} alt="x"/> 
 
-          <ModalContainer>
-            <BagsModalImage src={Bag} alt=""/>
-            <span>Indica il numero di borse che stai acquistando</span>
-            <Button onClick={() => handleContinueWithNoBags()}>Non ho bisogno, grazie!</Button>
-            <GreyButton onClick={() => handleBagsAddition(1)}>1 Borsa</GreyButton>
-            <GreyButton onClick={() => handleBagsAddition(2)}>2 Borsa</GreyButton>
-            <GreyButton onClick={() => handleBagsAddition(3)}>3 Borsa</GreyButton>
-          </ModalContainer>
+        <ModalContainer>
+          <BagsModalImage src={Bag} alt=""/>
+          <span>Indica il numero di borse che stai acquistando</span>
+          <Button onClick={() => handleContinueWithNoBags()}>Non ho bisogno, grazie!</Button>
+          <GreyButton onClick={() => handleBagsAddition(1)}>1 Borsa</GreyButton>
+          <GreyButton onClick={() => handleBagsAddition(2)}>2 Borsa</GreyButton>
+          <GreyButton onClick={() => handleBagsAddition(3)}>3 Borsa</GreyButton>
+        </ModalContainer>
       </Modal> 
   </>);
 };

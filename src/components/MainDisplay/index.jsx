@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { previousStep } from "../../store/modules/step/actions";
-import { emptyString } from '../../store/modules/payment/actions';
 import { Container, AccessibilityIcons, Button } from './styles';
 import PaymentOption from "../PaymentOption";
 import ProductDisplay from '../ProductDisplay';
@@ -16,23 +15,24 @@ const MainDisplay = () => {
   const payment = useSelector((state) => state.payment);
   const dispatch = useDispatch();
   const navigate = useNavigate(); 
+  const step = useSelector((state) => state.step);
 
 
   useEffect(() => {
   },[payment])
 
   const handleClick = () => {
-    dispatch(emptyString());
+    dispatch(previousStep());
     navigate('/');
   };
 
   return (
   <Container>
-    {payment ? <PaymentOption /> : <ProductDisplay /> }
+    {payment ? <PaymentOption /> : <ProductDisplay />}
     <AccessibilityIcons>
       <img src={AccessibilityButton} alt="" />
       <img src={Sound} alt="" />
-      {!payment && <img src={Leave} alt="" />}
+      {!payment && <img src={Leave} alt="" onClick={() => handleClick()} />}
       {payment && <Button onClick={() => handleClick()}>INDIETRO</Button>}
     </AccessibilityIcons>
   </Container>);

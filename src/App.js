@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      {step != '' && <LanguageSelector />}
+      {step === 1 && <LanguageSelector />}
       <GlobalStyle />
       <AppRoutes />
     </>

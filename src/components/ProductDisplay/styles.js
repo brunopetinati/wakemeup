@@ -50,6 +50,7 @@ export const ProductContainerInfo = styled.div`
   };
 `;
 
+
 export const PromotionIconsContainer = styled.div`
   display: flex;
   flex-direction: row;
