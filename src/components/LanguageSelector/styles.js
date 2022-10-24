@@ -26,6 +26,7 @@ export const InnerContainer = styled.div`
 
   img {
     margin-left: 2em;
+    height: 1em;
   }
 
   div {

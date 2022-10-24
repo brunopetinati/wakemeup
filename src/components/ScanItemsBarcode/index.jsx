@@ -6,12 +6,12 @@ import { nextStep } from '../../store/modules/step/actions';
 import { addBags } from '../../store/modules/bags/actions'
 import { Container, GearIcon, InnerContainer, AccessibilityIcons, BagsModalImage, Button, GreyButton } from './styles';
 import { globalModal, ModalContainer } from '../../global/styles/index'
-import Group9 from '../../assets/icons/group9.png'
 import Gear from '../../assets/icons/gear.png'
 import AccessibilityButton from '../../assets/icons/accessibility.png'
 import Sound from '../../assets/icons/sound button.png'
 import x from '../../assets/icons/times.svg'
 import Bag from '../../assets/icons/bags.png'
+import Group9 from '../../assets/icons/group9.png'
 
 const ScanItemBarcode = () => {
 
