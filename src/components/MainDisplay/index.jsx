@@ -28,9 +28,15 @@ const MainDisplay = () => {
   };
 
   const handleIndietro = () => {
-    dispatch(emptyString());
-    dispatch(previousStep());
-    navigate('/desk-2-scanner');
+    if (step === 3) {
+      dispatch(emptyString());
+      dispatch(previousStep());
+      navigate('/desk-2-scanner');
+    } else {
+      dispatch(emptyString());
+      dispatch(previousStep(2));
+      navigate('/desk-2-scanner');
+    };
   };
 
   return (
