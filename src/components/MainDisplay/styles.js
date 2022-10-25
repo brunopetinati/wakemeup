@@ -104,13 +104,14 @@ export const AccessibilityIcons = styled.div`
 
 export const Button = styled.button`
   border:none;
+  margin-left: 2em;
   background: #FF8D8D;
   box-shadow: 0px 3.00183px 3.00183px rgba(0, 0, 0, 0.25);
   border-radius: 15.544px;
   color: white;
   font-weight: 700;
-  font-size: 16px;
-  width: 9em;
-  height: 5em;
+  font-size: 22px;
+  width: 7em;
+  height: 4.5em;
   border-radius: 21.1599px;
 `;

@@ -4,6 +4,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 3em;
+  width: 100%;
+  height: 55.25vh;
+
+  img {
+    margin-top: 9em;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -13,20 +21,15 @@ export const InnerContainer = styled.div`
   align-items: center;
 
   img {
-    position: relative;
     right: 5em;
-    margin-top: 1em;
+    margin-top: 5em;
   }
 
   span {
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
     font-weight: 100;
     font-size: 1.5em;
     inline-size: 15em;
     color: #000;
+    text-align: center;
   };
 `;

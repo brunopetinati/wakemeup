@@ -7,7 +7,7 @@ const LanguageSelector = () => {
 
   const step = useSelector((state) => state.step)
 
-  return step === 1 && 
+  return step !== 0 && 
   <Container>
     <InnerContainer>
     <img src={Bizerba} alt="" />
