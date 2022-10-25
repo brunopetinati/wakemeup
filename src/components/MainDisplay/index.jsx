@@ -30,7 +30,7 @@ const MainDisplay = () => {
   const handleIndietro = () => {
     dispatch(emptyString());
     dispatch(previousStep());
-    navigate('/desk-1-init');
+    navigate('/desk-2-scanner');
   };
 
   return (
