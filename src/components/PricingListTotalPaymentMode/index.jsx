@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Container, BlueLoading, InnerContainer } from './styles';
 
 
-const PricingListTotalPaymentMode = ({doubleMessage = false}) => {
+const PricingListTotalPaymentMode = ({doubleMessage = true}) => {
 
   return (
   <motion.div
