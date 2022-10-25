@@ -53,6 +53,27 @@ export const Button = styled.button`
   align-items: center;
 `;
 
+export const WaitingPayment = styled.button`
+  border: none;
+  background: #32D49D;
+  width: 14em;
+  height: 10em;
+  box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 21.2184px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+  flex-diretion: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2em;
+
+  p {
+    max-width: 7em;
+  }
+`;
+
 export const GreenButtonModal = styled.button`
   border: none;
   box-shadow: 0px 3.07373px 3.07373px rgba(0, 0, 0, 0.25);

@@ -27,7 +27,7 @@ const DESK_2_PAYMENT = () => {
         <MainDisplay />
       </InnerContainer>
       <MarginRightContainer>
-        {step === 3 ? <PricingListPaymentMode /> : step === 4 ? <PricingListPaymentMode doubleMessage={true} /> : <PricingListTotal /> }
+        {step === 3 ? <PricingListPaymentMode /> : step === 4 ? <PricingListTotal/> : <PricingListTotal /> }
       </MarginRightContainer>
     </MainContainer>
   </motion.div>

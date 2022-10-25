@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 55.25vh;
 
   img {
+    width: 20em;
     margin-top: 9em;
   }
 `;

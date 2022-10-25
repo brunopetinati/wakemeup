@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { Container, BlueLoading, InnerContainer } from './styles';
 
 
-const PricingListTotalPaymentMode = ({doubleMessage = true}) => {
+
+// componente não mais utilizado. Deletar?
+const PricingListTotalPaymentMode = ({doubleMessage = false}) => {
 
   return (
   <motion.div
