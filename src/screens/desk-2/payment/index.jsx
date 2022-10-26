@@ -6,6 +6,7 @@ import LotteriaDegliScontrini from '../../../components/LotteriaDegliScontrini';
 import PricingListTotal from '../../../components/PricingListTotal';
 import PricingListPaymentMode from '../../../components/PricingListTotalPaymentMode'
 import MainDisplay from '../../../components/MainDisplay';
+import SatisfactionSurvey from '../../../components/SatisfactionSurvey';
 
 
 const DESK_2_PAYMENT = () => {
@@ -27,7 +28,7 @@ const DESK_2_PAYMENT = () => {
         <MainDisplay />
       </InnerContainer>
       <MarginRightContainer>
-        {step === 3 ? <PricingListPaymentMode /> : step === 4 ? <PricingListTotal/> : <PricingListTotal /> }
+        {step === 3 ? <PricingListPaymentMode /> : step === 4 ? <PricingListTotal/> : step === 5 ? <SatisfactionSurvey /> : <PricingListTotal />  }
       </MarginRightContainer>
     </MainContainer>
   </motion.div>
