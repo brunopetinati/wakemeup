@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { nextStep } from '../../store/modules/step/actions';
-import { confirming } from '../../store/modules/payment/actions';
+import { confirming, paymentSuccessful } from '../../store/modules/payment/actions';
 import ProductDetail from '../ProductDetail';
 import { Container, Header, Button, GreenButtonModal, BlueButtonModal, MaxItensContainer, WaitingPayment } from './styles';
 import Cart from '../../assets/icons/white-cart.png';
@@ -21,6 +21,7 @@ const PricingListTotal = () => {
   const products = ['logo printed shorts', 'sweat-shirt à fermeture éclair', 'Napolina Tagliatelle', 'Adina Latte', 'Coca Cola', 'logo printed crispy nylon swim shorts']
   const [modal, showModal] = useState(false);
   const step = useSelector((state) => state.step);
+  const payment = useSelector((state) => state.payment);
   
 
   const handleToggle = () => {
@@ -33,6 +34,7 @@ const PricingListTotal = () => {
     dispatch(confirming());
     navigate('/desk-2-payment')
   };
+
 
   return (
   <>
