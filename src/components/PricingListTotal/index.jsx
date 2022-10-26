@@ -35,6 +35,11 @@ const PricingListTotal = () => {
     navigate('/desk-2-payment')
   };
 
+  const paymentSuccessfull = () => {
+    dispatch(nextStep());
+    dispatch(paymentSuccessful());
+  };
+
 
   return (
   <>
@@ -43,7 +48,7 @@ const PricingListTotal = () => {
       <MaxItensContainer>
         {products.map((product, index) => <ProductDetail productName={product} key={index}/>)}
       </MaxItensContainer>
-      {step === 4 ? <WaitingPayment><p>Attendere mentre stiamo processando il pagamento</p></WaitingPayment> : <Button onClick={() => handleToggle()}>PAGARE <strong>€ 130.65</strong></Button>}
+      {step === 4 ? <WaitingPayment onClick={() => paymentSuccessfull()}><p>Attendere mentre stiamo processando il pagamento</p></WaitingPayment> : <Button onClick={() => handleToggle()}>PAGARE <strong>€ 130.65</strong></Button>}
     </Container>
     <Modal
       isOpen={modal}

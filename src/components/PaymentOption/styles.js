@@ -20,6 +20,7 @@ export const InnerContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  max-width: 80%;
 
   img {
     right: 5em;
