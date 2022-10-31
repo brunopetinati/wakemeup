@@ -15,7 +15,29 @@ export const Container = styled.div`
 `;
 
 export const MaxItensContainer = styled.div`
-  height: 70vh;
+  height: 65vh;
+`;
+
+export const TotalInfoDisplay = styled.div`
+  height: 5vh;
+  width: 48vw;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  color: #5D6174;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+    margin: 1em 2em 1em 2em;
+  }
 `;
 
 export const Header = styled.div`
@@ -67,7 +89,7 @@ export const WaitingPayment = styled.button`
   flex-diretion: row;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 
   p {
     max-width: 7em;

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { nextStep } from '../../store/modules/step/actions';
 import { confirming, paymentSuccessful } from '../../store/modules/payment/actions';
 import ProductDetail from '../ProductDetail';
-import { Container, Header, Button, GreenButtonModal, BlueButtonModal, MaxItensContainer, WaitingPayment } from './styles';
+import { Container, Header, Button, GreenButtonModal, BlueButtonModal, MaxItensContainer, TotalInfoDisplay, WaitingPayment } from './styles';
 import Cart from '../../assets/icons/white-cart.png';
 import Modal from 'react-modal';
 import { globalModal, ModalContainer } from '../../global/styles/index';
@@ -22,7 +22,7 @@ const PricingListTotal = () => {
   const [modal, showModal] = useState(false);
   const step = useSelector((state) => state.step);
   const payment = useSelector((state) => state.payment);
-  
+  const bags = useSelector((state) => state.bags);
 
   const handleToggle = () => {
     showModal(!modal);
@@ -48,6 +48,17 @@ const PricingListTotal = () => {
       <MaxItensContainer>
         {products.map((product, index) => <ProductDetail productName={product} key={index}/>)}
       </MaxItensContainer>
+      <TotalInfoDisplay>
+        <div>
+          <span>ADDEBITO BORSE DI PLASTICA</span>
+          <span>{bags === 1 ? <span>1 borsa</span> : <span>{bags} borsas</span>}</span>
+          <span>€ 0.15</span>
+        </div>
+        <div>
+          <span>TOTALE ARTICOLI</span>
+          <span>€ 130.50</span>
+        </div>
+      </TotalInfoDisplay>
       {step === 4 ? <WaitingPayment onClick={() => paymentSuccessfull()}><p>Attendere mentre stiamo processando il pagamento</p></WaitingPayment> : <Button onClick={() => handleToggle()}>PAGARE <strong>€ 130.65</strong></Button>}
     </Container>
     <Modal

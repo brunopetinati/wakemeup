@@ -43,6 +43,7 @@ export const InnerFirstSelection = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 24vh;
+  margin-top: 1em;
 `;
 
 export const MiniCard = styled.div`

@@ -34,13 +34,14 @@ export const InnerContainer = styled.div`
 
 export const SatisfactionContainer = styled.div`
   width: 48vw;
-  height: 50%;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   color: #5D6174;
+  margin-top: 10em;
 
   span {
     font-weight: 300;
@@ -52,7 +53,7 @@ export const SatisfactionContainer = styled.div`
 export const SmilyFaces = styled.div`
   width: 80%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
 

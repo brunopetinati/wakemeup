@@ -32,6 +32,10 @@ const MainDisplay = () => {
       dispatch(emptyString());
       dispatch(previousStep());
       navigate('/desk-2-scanner');
+    } else if (step === 5){
+      dispatch(emptyString());
+      dispatch(previousStep(3));
+      navigate('/desk-2-scanner');
     } else {
       dispatch(emptyString());
       dispatch(previousStep(2));
