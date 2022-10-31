@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import AddRemoveBags from "../AddRemoveBags";
 import { previousStep } from "../../store/modules/step/actions";
 import { Container, InnerContainer, BagsContainer, Button, ImageBag, ImageScanner, StyledSpan } from './styles';
-import Scanner from '../../assets/icons/scanner.png'
+import Scanner from '../../assets/icons/gif.gif'
 import Bags from '../../assets/icons/bags.png'
 
 const BagsController = () => {

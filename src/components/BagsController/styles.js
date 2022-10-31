@@ -55,15 +55,16 @@ export const Button = styled.button`
   font-weight: bolder;
   font-size: 24px;
   letter-spacing: 1px;
+  margin-top: 1em;
 `;
 
 export const ImageBag = styled.img`
-  width: 5em;
+  width: 3em;
 `;
 
 export const ImageScanner = styled.img`
-  width: 20em;
-  height: 15em;
+  width: 25em;
+  height: 25em;
 `;
 
 export const StyledSpan = styled.span`
