@@ -9,8 +9,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 768px;
+  height: 1366px;
+  margin: 0 auto;
 `;
 
 export const InnerContainer = styled.div`
@@ -21,8 +22,8 @@ export const InnerContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 68.16vw;
-  height: 57.69vh;
+  width: 80%;
+  height: 50%;
   color: #FFF;
   font-family: 'Inter';
   font-style: normal;

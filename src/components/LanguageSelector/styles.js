@@ -13,8 +13,8 @@ export const Container = styled.div`
 
 
 export const InnerContainer = styled.div`
-  height: 10vh;
-  width: 95vw;
+  height: 100%;
+  width: 100%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;

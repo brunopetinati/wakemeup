@@ -6,6 +6,8 @@ import DESK_1_INIT from '../screens/desk-1/index'
 import DESK_2_SCANNER from '../screens/desk-2/scanner'
 import DESK_2_PAYMENT from '../screens/desk-2/payment';
 
+import GridComponent from '../components/GridComponent/index'
+
 const AppRoutes = () => {
 
   return (

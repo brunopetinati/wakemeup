@@ -7,12 +7,8 @@ export const MainContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   background: #F5F5F5;
-  width: 100vw;
-  height: 100vh;
-
-  @media (min-width: 769px) {
-    height: 200vh;
-  }
+  width: 768px;
+  height: 1366px;
 `;
 
 export const InnerContainer = styled.div`
