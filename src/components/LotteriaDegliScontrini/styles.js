@@ -12,12 +12,11 @@ export const Container = styled.div`
   background: #FFF;
 
   img {
-    width: 3vw;
-    margin-left: 2vw;
+    width: 50px;
+    margin: 1em;
   }
 
   h4 {
-    margin-left: 1vw;
     color: #5D6174;
     text-align: center;
   }
