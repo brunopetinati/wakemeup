@@ -112,4 +112,5 @@ export const Button = styled.button`
   width: 7em;
   height: 4.5em;
   border-radius: 21.1599px;
+  margin-top: 1em;
 `;

@@ -65,12 +65,12 @@ export const Button = styled.button`
   height: 4em;
   box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.25);
   border-radius: 21.2184px;
-  margin-top: 1.5em;
+  margin-top: 15%;
   color: white;
   font-size: 24px;
   font-weight: 300;
   display: flex;
-  flex-diretion: row;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 `;
