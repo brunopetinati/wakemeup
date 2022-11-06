@@ -8,19 +8,23 @@ export const MainContainer = styled.div`
   justify-content: space-between;
   background: #F5F5F5;
   width: 768px;
-  height: 1366px;
+  height: 1246px;
+  margin: 0 auto;
 `;
 
 export const InnerContainer = styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
-  width 50vw;
-  height: 90vh;
-`;
+  width: 50%;
+  height: 95%;
+  margin-top: 1em;
+  `;
 
 export const MarginRightContainer = styled.div`
   margin-right: 3vw;
+  height: 100%;
+  width: 100%;
 `;
 
 export const globalModal = {

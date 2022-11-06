@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 45vw;
-  height: 69.7vh;
+  width: 90%;
+  height: 75%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -80,23 +80,20 @@ export const PromotionIcons = styled.div`
 
 export const AccessibilityIcons = styled.div`
   width: 100%;
-  height: 5vh;
+  height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 2em;
-  margin-left: 2em;
 
   img {
-    width: 6vw;
-    height: 3em;
+    width: 50px;
+    height: 50px;
     margin-left: 1em;
   };
 
   img:nth-child(3) {
-    height: 4em;
-    margin-left: 8em;
+    margin-left: 38%;
   }
 `;
 

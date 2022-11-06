@@ -1,24 +1,23 @@
 import styled from "styled-components";
 
-
-
 export const Container = styled.div`
-  width: 48vw;
-  height: 87vh;
+  width: 370px;
+  height: 95%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1em;
 
   font-style: italic;
   font-weight: 400;
 `;
 
 export const InnerContainer = styled.div`
-  width: 48vw;
-  height: 35vh;
+  width: 100%;
+  height: 40%;
   background: #32D49D;
   box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.25);
   border-radius: 21.2184px;
@@ -33,7 +32,7 @@ export const InnerContainer = styled.div`
 `;
 
 export const SatisfactionContainer = styled.div`
-  width: 48vw;
+  width: 100%;
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -52,12 +51,14 @@ export const SatisfactionContainer = styled.div`
 
 export const SmilyFaces = styled.div`
   width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
 
   img {
+    margin-top: 10%;
     width: 3em;
   }
 `;

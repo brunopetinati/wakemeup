@@ -47,7 +47,7 @@ const ScanItemBarcode = () => {
     <>
       <Container>
         <InnerContainer>
-          <GearIcon src={Gear}/>
+          {/* <GearIcon src={Gear}/> */}
           <h1>Nostro Supermercato</h1>
         </InnerContainer>
         <p>Teniamo alla salute dei nostri clienti, abbiamo idee che vanno oltre la semplice gestione o vendita di beni</p>

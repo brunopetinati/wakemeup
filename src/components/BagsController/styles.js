@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-  width: 48vw;
-  height: 87vh;
+  width: 48%;
+  height: 95%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -12,6 +12,7 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   margin-right: 3vw;
+  margin-top: 1em;
 
   span {
     margin: 1.5em;
@@ -46,7 +47,7 @@ export const BagsContainer = styled.div`
 
 export const Button = styled.button`
   background: #FF3A3A;
-  height: 7vh;
+  height: 9%;
   width: 100%;
   border-radius: 26.3319px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

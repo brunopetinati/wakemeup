@@ -27,13 +27,8 @@ export const InnerContainer = styled.div`
   color: #FFF;
   font-family: 'Inter';
   font-style: normal;
-  font-size: 10vh;
+  font-size: 64px;
   font-weight: 500;
-
-  @media (max-width: 768px) {
-    height: 28vh;
-    font-size: 5vh;
-  }
 `;
 
 export const AccessibilityButton = styled.button`

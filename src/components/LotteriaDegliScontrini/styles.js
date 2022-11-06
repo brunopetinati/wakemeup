@@ -5,20 +5,21 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   margin: 1em;
-  width: 45vw;
-  height: 5vh;
+  width: 90%;
+  height: 10%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
 
   img {
-    width: 5vw;
-    margin-left: 5vw;
+    width: 3vw;
+    margin-left: 2vw;
   }
 
   h4 {
-    margin-left: 3vw;
+    margin-left: 1vw;
     color: #5D6174;
+    text-align: center;
   }
 `;
 

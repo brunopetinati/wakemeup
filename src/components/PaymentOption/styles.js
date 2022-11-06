@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: flex-start;
   margin-top: 3em;
   width: 100%;
-  height: 55.25vh;
+  height: 70%;
 
   img {
     width: 20em;

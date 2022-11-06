@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 45vw;
-  height: 69.7vh;
+  width: 90%;
+  height: 100%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -16,6 +16,10 @@ export const Container = styled.div`
     color: #000000;
     text-align: center;
     margin-top: 2em;
+    font-size: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
   };
 
   p {
@@ -57,8 +61,8 @@ export const AccessibilityIcons = styled.div`
   margin-left: 2em;
   
   img {
-    width: 6vw;
-    height: 3em;
+    width: 50px;
+    height: 50px;
     margin-left: 1em;
   };
 `;

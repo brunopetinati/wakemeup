@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 48vw;
-  height: 87vh;
+  width: 100%;
+  height: 95%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
 `;
 
 export const PricingListHeader = styled.div`
@@ -30,7 +31,8 @@ export const PricingListHeader = styled.div`
 export const TableContainer = styled.div`
   display:flex;
   flex-direction: column;
-  height: 40vh;
+  height: 55%;
+  background: #FFF;
   overflow: scroll;
 `;
 
@@ -42,7 +44,7 @@ export const InnerFirstSelection = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 24vh;
+  height: 50%;
   margin-top: 1em;
 `;
 
@@ -55,7 +57,7 @@ export const MiniCard = styled.div`
   background: #F5F5F5;
   box-shadow: 0px 2.99069px 2.99069px rgba(0, 0, 0, 0.25);
   border-radius: 15.9505px;
-  height: 6em;
+  height: 5em;
   width: 90%;
 
   img {

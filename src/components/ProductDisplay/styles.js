@@ -6,7 +6,7 @@ export const InnerContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 100%;
 
   h1 {
     margin-top: 2em;
@@ -60,7 +60,7 @@ export const PromotionIconsContainer = styled.div`
   flex-direction: row;
   height: 100%;
   margin-top: 3em;
-  height: 20vh;
+  height: 100%;
 
   
   span {
@@ -76,8 +76,8 @@ export const PromotionIcons = styled.div`
   justify-content: space-around;
 
   img {
-    height: 2em;
-    width: 2em;
+    height: 50px;
+    width: 50px;
   };
 `;
 

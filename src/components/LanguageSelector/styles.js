@@ -5,16 +5,16 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 12vh;
-  width: 100vw;
+  justify-content: flex-end;
+  height: 120px;
+  width: 768px;
   background: #F5F5F5;
 `;
 
 
 export const InnerContainer = styled.div`
-  height: 100%;
-  width: 100%;
+  height: 100px;
+  width: 738px;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -23,6 +23,7 @@ export const InnerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 
   img {
     margin-left: 2em;

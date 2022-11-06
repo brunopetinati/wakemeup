@@ -1,4 +1,3 @@
-import LanguageSelector from '../LanguageSelector/index';
 import MultiStepForm from '../MultiStep';
 import styled from 'styled-components';
 import { AppplicationPage } from './styles'

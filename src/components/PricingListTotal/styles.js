@@ -1,26 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 48vw;
-  height: 87vh;
+  width: 370px;
+  height: 95%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #8AFFD6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1em;
 
   font-style: italic;
   font-weight: 400;
 `;
 
 export const MaxItensContainer = styled.div`
-  height: 65vh;
+  height: 75%;
 `;
 
 export const TotalInfoDisplay = styled.div`
   height: 5vh;
-  width: 48vw;
+  width: 90%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -36,7 +37,6 @@ export const TotalInfoDisplay = styled.div`
     flex-direction: row;
     align-items: initial;
     justify-content: space-between;
-    margin: 1em 2em 1em 2em;
   }
 `;
 

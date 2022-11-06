@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 15%;
   box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background: #FFF;
@@ -17,9 +17,8 @@ export const ProgressBarStyle = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center; 
-  width: 100%;
+  width: 90%;
   height: 40%;
-  margin-left: 0.9vw;
   z-index: 0;
 `;
 
@@ -29,7 +28,7 @@ export const BiggerBallStep = styled.div`
   content: '';
   background: #3DD5A1;
   width: 12px;
-  height: 12px;
+  height: 8px;
   border-radius: 50%;
   border: solid #F5F5F5 4px;
   box-shadow: 0 0 0 5px #3DD5A1;
@@ -41,7 +40,7 @@ export const SmallerBallStep = styled.div`
   content: '';
   background: white;
   width: 11px;
-  height: 11px;
+  height: 7px;
   border-radius: 50%;
   border: solid #C9C9C9 8px;
   z-index: 2;
@@ -52,14 +51,14 @@ export const SmallerHighlightedBallStep = styled.div`
   content: '';
   background: white;
   width: 11px;
-  height: 11px;
+  height: 7px;
   border-radius: 50%;
   border: solid #3DD5A1 8px;
 `;
 
 export const HighlightedBarStep = styled.div`
-  width: 9vw;;
-  height: 5px;
+  width: 9vw;
+  height: 6px;
   background: linear-gradient(to right, #3DD5A1, #00D28A);
   z-index: 2;
 `;  
@@ -67,7 +66,7 @@ export const HighlightedBarStep = styled.div`
 
 export const FadedBarStep = styled.div`
   width: 9vw;;
-  height: 5px;
+  height: 6px;
   background: #C9C9C9;
   z-index: 0;
 `;  
@@ -85,7 +84,7 @@ export const StepIconsContainer = styled.div`
   margin-top: 1em;
 
   img {
-    width: 4vw;
+    width: 40px;
   }
 `;
 
