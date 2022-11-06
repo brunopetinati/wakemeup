@@ -57,7 +57,7 @@ export const AccessibilityIcons = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 2em;
+  margin-top: 23%;
   margin-left: 2em;
   
   img {

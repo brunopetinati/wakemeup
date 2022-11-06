@@ -90,6 +90,7 @@ export const AccessibilityIcons = styled.div`
     width: 50px;
     height: 50px;
     margin-left: 1em;
+    margin-top: 2em;
   };
 
   img:nth-child(3) {
