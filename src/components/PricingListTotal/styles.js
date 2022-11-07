@@ -20,7 +20,7 @@ export const MaxItensContainer = styled.div`
 `;
 
 export const TotalInfoDisplay = styled.div`
-  height: 5vh;
+  height: 7%;
   width: 90%;
   font-family: 'Inter';
   font-style: normal;
@@ -65,7 +65,6 @@ export const Button = styled.button`
   height: 4em;
   box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.25);
   border-radius: 21.2184px;
-  margin-top: 15%;
   color: white;
   font-size: 24px;
   font-weight: 300;
@@ -78,18 +77,18 @@ export const Button = styled.button`
 export const WaitingPayment = styled.button`
   border: none;
   background: #32D49D;
-  width: 14em;
-  height: 10em;
+  width: 90%;
+  height: 20%;
   box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.25);
   border-radius: 21.2184px;
   color: white;
   font-size: 24px;
   font-weight: 300;
   display: flex;
-  flex-diretion: row;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 14%;
 
   p {
     max-width: 7em;
