@@ -82,10 +82,12 @@ export const StepIconsContainer = styled.div`
   width: 90%;
   height: 25%;
   margin-top: 1em;
+`;
 
-  img {
-    width: 40px;
-  }
+export const StyledIcon = styled.img`
+  width: 40px;
+  //color: ${(props) => props.active ? 'green' : 'black' };
+  color: red;
 `;
 
 export const StepTittleContainer = styled.div`

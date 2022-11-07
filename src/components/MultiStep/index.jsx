@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { Container, BiggerBallStep, SmallerBallStep, ProgressBarStyle, FadedBarStep, SmallerHighlightedBallStep, HighlightedBarStep, StepTittleContainer, StepIconsContainer  } from './styles';
-import Scanbarcode from '../../assets/icons/scanbarcode.png' 
-import Paymentopt from '../../assets/icons/paymentopt.png' 
-import Payment from '../../assets/icons/payment.png' 
-import Transactioncomplete from '../../assets/icons/transactioncomplete.png' 
+import { Container, BiggerBallStep, SmallerBallStep, ProgressBarStyle, FadedBarStep, SmallerHighlightedBallStep, HighlightedBarStep, StepTittleContainer, StepIconsContainer, StyledIcon  } from './styles';
+import Scanbarcode from '../../assets/icons/barcode.svg' 
+import Paymentopt from '../../assets/icons/controles.svg' 
+import Payment from '../../assets/icons/cartao.svg' 
+import Transactioncomplete from '../../assets/icons/transationcomplete.svg' 
 
  
 const MultiStepForm = () => {
@@ -71,7 +71,7 @@ const MultiStepForm = () => {
   return (
   <Container>
     <StepIconsContainer>
-      {icons.map((icon, index) => <img src={icon} key={index} alt=""/>)}
+      {icons.map((icon, index) => <StyledIcon src={icon} key={index} active={true} alt=""/>)}
     </StepIconsContainer>
     <ShowStep />
     <StepTittleContainer>
