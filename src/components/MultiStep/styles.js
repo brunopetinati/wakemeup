@@ -39,10 +39,10 @@ export const SmallerBallStep = styled.div`
   display: block;
   content: '';
   background: white;
-  width: 11px;
-  height: 7px;
+  width: 6px;
+  height: 5px;
   border-radius: 50%;
-  border: solid #C9C9C9 8px;
+  border: solid #C9C9C9 6px;
   z-index: 2;
 `;
 
@@ -50,10 +50,10 @@ export const SmallerHighlightedBallStep = styled.div`
   display: block;
   content: '';
   background: white;
-  width: 11px;
-  height: 7px;
+  width: 6px;
+  height: 5px;
   border-radius: 50%;
-  border: solid #3DD5A1 8px;
+  border: solid #3DD5A1 6px;
 `;
 
 export const HighlightedBarStep = styled.div`
@@ -79,9 +79,10 @@ export const StepIconsContainer = styled.div`
   justify-content: space-between;
   align-items: center; 
   justify-self: center;
-  width: 90%;
+  width: 100%;
   height: 25%;
   margin-top: 1em;
+  margin-right: 8px;
 `;
 
 export const StyledIcon = styled.img`
@@ -106,3 +107,7 @@ export const StepTittleContainer = styled.div`
   color: #ABABAB;
   font-size: 12px;
 `;  
+
+export const ColorTitle = styled.div`
+  color: ${ props => props.color ? '#3DD5A1' : '#CDCDCD'};
+`;
