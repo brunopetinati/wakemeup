@@ -23,8 +23,13 @@ const MainDisplay = () => {
   },[payment])
 
   const handleClick = () => {
-    dispatch(previousStep(2));
-    navigate('/');
+    if (step === 2) {
+      dispatch(previousStep(2));
+      navigate('/');
+    } else if (step === 3) {
+      dispatch(previousStep(3));
+      navigate('/');
+    };
   };
 
   const handleIndietro = () => {
