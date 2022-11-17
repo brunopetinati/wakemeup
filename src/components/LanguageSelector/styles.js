@@ -33,5 +33,6 @@ export const InnerContainer = styled.div`
   div {
     display: flex;
     margin-right: 2em;
+    align-items: center;
   }
 `;
