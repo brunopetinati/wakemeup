@@ -6,10 +6,11 @@ import Person from '../../assets/icons/person.png'
 import ReactFlagsSelect from "react-flags-select";
 
 
+
 const LanguageSelector = () => {
 
   const step = useSelector((state) => state.step)
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("IT");
 
   return step !== 0 && 
   <Container>
@@ -21,8 +22,8 @@ const LanguageSelector = () => {
         selected={selected}
         onSelect={(code) => setSelected(code)}
         countries={["US", "IT"]}
-        placeholder="Language"
         showSelectedLabel={false}
+        showOptionLabel={false}
       />
       <img src={Person} alt="" />
     </div>
